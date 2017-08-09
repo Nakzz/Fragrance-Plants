@@ -1,0 +1,102 @@
+.lt-grey { color: $lt-grey;}
+
+.vlt-grey { color: $vlt-grey;}
+
+.mid-grey { color: $mid-grey;}
+
+.blue { color: $blue;}
+
+.yellow { color:$yellow;}
+
+.green { color: $green;}
+
+.mid-green { color: $mid-green;}
+
+.dk-green { color: $dk-green;}
+
+.white { color: $white;}
+
+.grey-bg { background: $grey;}
+
+.lt-grey-bg { background: $lt-grey;}
+
+.vlt-grey-bg { background: $vlt-grey;}
+
+.mid-grey-bg { background: $mid-grey;}
+
+.blue-bg { background: $blue;}
+
+.yellow-bg { background:$yellow;}
+
+.green-bg { background: $green;}
+
+.mid-green-bg { background: $mid-green;}
+
+.dk-green-bg { background: $dk-green;}
+
+.white-bg { background: $white;}
+
+.italic { font-style: italic;}
+
+.normal { font-weight: normal;}
+
+.bold { font-weight: bold;}
+
+.light { font-weight: 200;}
+
+.medium { font-weight: 500;}
+
+.xbold { font-weight: 900;}
+
+.center { text-align: center;}
+
+.upper { text-transform: uppercase;}
+
+.lower { text-transform: lowercase;}
+
+.space { letter-spacing: .05em;}
+
+.xspace { letter-spacing: .1em;}
+
+.fleft { float: left;}
+
+.fright { float: right; }
+
+.shadow {
+  text-shadow: 2px 2px 1px #000;
+}
+
+@media screen and (min-width: 980px){.leaf_top:after{
+  width: 325px;
+  height: 325px;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  z-index: -1;
+  background: url("../img/background/leaves-top.svg") no-repeat center !important;
+}
+
+
+.leaf_left:after{
+  width: 325px;
+  height: 325px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+  background: url("../img/background/leaves-left.svg") no-repeat center !important;
+}
+
+
+.leaf_right:before{
+  width: 325px;
+  height: 325px;
+  position: absolute;
+  top: 400px;
+  left: 500px;
+  z-index: 100;
+  background: url("../img/background/leaves-right.svg") no-repeat center !important;
+}
+}
+
+.backdrop{-webkit-backdrop-filter: blur(10px);}
