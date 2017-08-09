@@ -1,0 +1,40 @@
+Change Navbar color to darker shade of green. Take HEX from image of store front.
+--Change Navbar fancy text weight to proof font.
+NAVBAR isn't hiding at high screen resolution
+--Navbar: search will just take to the product.php
+
+Contact us page header image WILL change: kathy will provide
+
+--Change background color to #ddeddd
+
+Homepage image: remove blur,
+                add blur just behind the text.
+                make text fit in one line
+
+--Category 3x2 row for 6 categories
+                center the text under each category
+                seasonal category will have a text to call the store
+
+
+Contact.php     change map from gray-scale to color
+                add text next to marker bold and red color
+                add sunday hours
+
+Products.php    each category is gonna have their own paragraph
+
+Hello,
+
+Please accept my sincere apology on behalf of our company. I am very sorry to learn that your experience with purchasing
+the yearly website hosting. We apologize for the inconvenience.
+From our side it is showing that you already have a PayPal account registered with the email, and
+unfortunately we can not do anything about it. You must confirm your account with PayPal in order to complete the purchase.
+When you sign up for a PayPal account,
+you type in the credit cards and bank accounts
+you wish to use for purchases one time on the PayPal secure system.
+Once that is accomplished, you never again have to disclose your
+credit card information online. By paying with PayPal,
+you keep your credit card information private,
+meaning that you can shop without worrying about a
+hacker downloading your account data from your online merchant.
+
+For the inconvenience our payment system has caused you, We have issued a coupon for 15% OFF for your order order as a gesture of our gratitude. We very much appreciate your business and hope that you will remain a valued customer. The link to complete the transaction will be given below:
