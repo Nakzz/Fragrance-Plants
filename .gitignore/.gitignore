@@ -1,9 +1,0 @@
-*.py[co]
-
-# Default development database
-devdata.db
-cred.php
-
-# Default data directory
-data/*
-
