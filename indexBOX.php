@@ -33,7 +33,7 @@
         <div class="container ">
           <div class="row ">
             <div class="col-md-8 ">
-              <div class="banner-title">
+              <div class="banner-title ">
                 <h2 style="font-size:2em" class="text-uppercase white-text">Fragrance Plants & Flowers Inc.</h2>
                 <h4 class="text-uppercase white-text">random text about store </h4>
               </div>
