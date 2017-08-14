@@ -1,6 +1,6 @@
-<header class="l-header">
+<header class="l-header headerAJ">
 
-  <div class="l-navbar l-navbar_expand l-navbar_t-light-trans navBARAJ">
+  <div class="l-navbar l-navbar_expand l-navbar_t-light-trans js-navbar-sticky">
     <div class="container-fluid">
       <nav class="menuzord js-primary-navigation" role="navigation" aria-label="Primary Navigation">
         <!--logo start-->
