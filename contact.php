@@ -1,4 +1,4 @@
-<?php include 'assets/includes/header.php'; ?>
+<?php include 'includes/header.php'; ?>
 <!-- <head> its in the php-->
 <meta name="description" content="">
 
@@ -143,7 +143,7 @@
 
 
     <!--header start-->
-    <?php include 'assets/includes/navBar.php'; ?>
+    <?php include 'includes/navBar.php'; ?>
     <!--header end-->
 
 
@@ -163,7 +163,7 @@
       </section>
       <!--body content end-->
 
-      <?php include 'assets/includes/footer.php'; ?>
+      <?php include 'includes/footer.php'; ?>
 
     </div>
 
