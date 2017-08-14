@@ -7,7 +7,7 @@
     $document = $(document);
     $body = $("body");
 
-    
+
     /*==============================================
      Pre loader init
      ===============================================*/
@@ -207,7 +207,7 @@
                     $portfolioGeneral.isotope("layout");
                 }, 400);
             });
-            
+
             $portfolioMasonry.imagesLoaded().done(function() {
                 setTimeout(function() {
                     $portfolioMasonry.isotope("layout");

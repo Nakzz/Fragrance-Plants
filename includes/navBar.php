@@ -1,9 +1,8 @@
-<header class="l-header l-header_overlay">
+<header class="l-header">
 
-  <div class="l-navbar l-navbar_expand l-navbar_t-light-trans js-navbar-sticky">
+  <div class="l-navbar l-navbar_expand l-navbar_t-light-trans navBARAJ">
     <div class="container-fluid">
       <nav class="menuzord js-primary-navigation" role="navigation" aria-label="Primary Navigation">
-
         <!--logo start-->
         <h3>
         <a href="index.php" class="logo-brand ">Fragrance Plants & Flowers Inc.
