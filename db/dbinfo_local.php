@@ -1,6 +1,8 @@
 <?php
-$db_hostname = 'localhost';
-$db_database = 'project'; //your database name will depend on your cPanel login on hostgator
-$db_username = 'root'; //your database user name will depend on your cPanel login on hostgator
-$db_password = 'a'; //replace with your own password.
+define('db_hostname', 'localhost');
+define('db_database', 'project');
+define('db_username', 'root');
+define('db_password', 'a');
+
+
 ?>
