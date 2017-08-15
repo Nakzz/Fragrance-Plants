@@ -75,35 +75,7 @@
          Sticky nav
          ===============================================*/
         function initSticky() {
-            var $navbarSticky, navbarHeight, $brandLogo, centerLogoNormalHeight, centerLogoStickyHeight;
-            $navbarSticky = $(".js-navbar-sticky").not(".l-navbar_s-left");
-            navbarHeight = $navbarSticky.height();
-            $brandLogo = $(".logo-brand");
-            centerLogoNormalHeight = 100;
-            centerLogoStickyHeight = 60;
-
-            if ($navbarSticky.hasClass("l-navbar_s-center")) {
-                //$brandLogo.height(centerLogoNormalHeight);
-            }
-
-            $navbarSticky.sticky({
-                className: "l-navbar-wrapper_has-sticky",
-                wrapperClassName: "l-navbar-wrapper",
-                zIndex: 10000,
-                //bottomSpacing: 100
-            }).on("sticky-start", function() {
-                if ($navbarSticky.hasClass("l-navbar_s-center")) {
-                    $brandLogo.height(0);
-                    setTimeout(function() {
-                        $brandLogo.addClass("sticky-fix").height(centerLogoStickyHeight);
-                    }, 300);
-                }
-            }).on("sticky-end", function () {
-                $navbarSticky.parent().height(navbarHeight);
-                if ($navbarSticky.hasClass("l-navbar_s-center")) {
-                    //$brandLogo.removeClass("sticky-fix").height(centerLogoNormalHeight);
-                }
-            });
+        
         }
         initSticky();
 

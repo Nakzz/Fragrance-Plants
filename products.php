@@ -31,6 +31,22 @@ echo "Host information: " . mysqli_get_host_info($connect) . PHP_EOL;
           <div class="row ">
             <div class="col-md-12">
 
+              <div class="text-center">
+                  <ul class="portfolio-filter">
+                      <li class="active"><a href="#" data-filter="*"> All</a>
+                      </li>
+                      <li><a href="#" data-filter=".cat1">Orchird</a>
+                      </li>
+                      <li><a href="#" data-filter=".cat2">Plants</a>
+                      </li>
+                      <li><a href="#" data-filter=".cat3">Indoor</a>
+                      </li>
+                      <li><a href="#" data-filter=".cat4">Outdoor</a>
+                      </li>
+                      <li><a href="#" data-filter=".cat5">BNZ</a>
+                      </li>
+                  </ul>
+              </div>
 
   <div class="portfolio col-4 gutter ">
 

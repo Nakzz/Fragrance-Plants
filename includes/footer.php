@@ -6,7 +6,7 @@
 New York NY 10001
         </a>
 
-        <div class="social-link circle m-top-50 m-bot-50">
+        <div class="social-link circle m-top-30 m-bot-20">
             <a href="#"><i class="fa fa-facebook"></i></a>
             <a href="#"><i class="fa fa-instagram"></i></a>
             <a href="#"><i class="fa fa-google-plus"></i></a>
