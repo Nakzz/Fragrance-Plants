@@ -1,11 +1,11 @@
 <?php
-  $db_file_exists= false;
-  bool file_exists ( string dbinfo_local.php )
 
-  if ()$db_file_exists=true){
-    echo "File Found.";
-  }
   require_once(dbinfo_local.php);
-  //$db_connect=
+
+  $db_connect= @mysqli_connect(db_hostname, db_username, db_password, db_database)
+OR die('Could not connect to MySQL: ' .
+
+mysqli_connect_error());
+
 
  ?>
