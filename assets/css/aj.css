@@ -104,3 +104,17 @@
     -webkit-transition: all .3s;
             transition: all .3s;
     background-color: rgba(0, 0, 0, .6);}
+
+.headerAJ{
+  position: absolute;
+  z-index: 1200;
+  top: 0;
+  width: 100%;
+  background: #0e4b3b;
+
+}
+
+@font-face {
+  font-family: Palatino;
+  src: url("../vendor/Palatino.ttf");
+}

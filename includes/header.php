@@ -6,7 +6,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-  
+
   <meta name="author" content="Ajmain">
 
   <!--favicon icon-->
@@ -14,7 +14,6 @@
 
   <!--common style-->
   <link href='http://fonts.googleapis.com/css?family=Abel|Source+Sans+Pro:400,300,300italic,400italic,600,600italic,700,700italic,900,900italic,200italic,200' rel='stylesheet' type='text/css'>
-  <link href="https://www.fontify.me/wf/d0515a1e9b9869a7d86f08af35212df2" rel="stylesheet" type="text/css">
 
   <!-- inject:css -->
   <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">

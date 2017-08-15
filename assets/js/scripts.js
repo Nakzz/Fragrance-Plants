@@ -7,7 +7,7 @@
     $document = $(document);
     $body = $("body");
 
-    
+
     /*==============================================
      Pre loader init
      ===============================================*/
@@ -83,14 +83,14 @@
             centerLogoStickyHeight = 60;
 
             if ($navbarSticky.hasClass("l-navbar_s-center")) {
-                $brandLogo.height(centerLogoNormalHeight);
+                //$brandLogo.height(centerLogoNormalHeight);
             }
 
             $navbarSticky.sticky({
                 className: "l-navbar-wrapper_has-sticky",
                 wrapperClassName: "l-navbar-wrapper",
                 zIndex: 10000,
-                bottomSpacing: 100
+                //bottomSpacing: 100
             }).on("sticky-start", function() {
                 if ($navbarSticky.hasClass("l-navbar_s-center")) {
                     $brandLogo.height(0);
@@ -101,7 +101,7 @@
             }).on("sticky-end", function () {
                 $navbarSticky.parent().height(navbarHeight);
                 if ($navbarSticky.hasClass("l-navbar_s-center")) {
-                    $brandLogo.removeClass("sticky-fix").height(centerLogoNormalHeight);
+                    //$brandLogo.removeClass("sticky-fix").height(centerLogoNormalHeight);
                 }
             });
         }
@@ -207,7 +207,7 @@
                     $portfolioGeneral.isotope("layout");
                 }, 400);
             });
-            
+
             $portfolioMasonry.imagesLoaded().done(function() {
                 setTimeout(function() {
                     $portfolioMasonry.isotope("layout");
