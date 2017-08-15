@@ -66,38 +66,7 @@
   text-shadow: 2px 2px 1px #000;
 }
 
-@media screen and (min-width: 980px){.leaf_top:after{
-  width: 325px;
-  height: 325px;
-  position: absolute;
-  top: 10px;
-  left: 20px;
-  z-index: -1;
-  background: url("../img/background/leaves-top.svg") no-repeat center !important;
-}
 
-
-.leaf_left:after{
-  width: 325px;
-  height: 325px;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  z-index: 1;
-  background: url("../img/background/leaves-left.svg") no-repeat center !important;
-}
-
-
-.leaf_right:before{
-  width: 325px;
-  height: 325px;
-  position: absolute;
-  top: 400px;
-  left: 500px;
-  z-index: 100;
-  background: url("../img/background/leaves-right.svg") no-repeat center !important;
-}
-}
 
 .backdrop{
   position: relative;
