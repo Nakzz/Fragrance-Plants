@@ -16,8 +16,6 @@
   </div>
   <!-- preloader end -->
 
-
-
   <div class="wrapper">
 
 
@@ -56,7 +54,7 @@
 
               <h3 class="text-uppercase">Category</h3>
 
-              <p class="half-txt p-top-20">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
+              <p class="half-txt p-top-20">Nam liro tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
                 placeat facere possimus.</p>
               </div>
 
