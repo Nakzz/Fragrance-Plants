@@ -34,38 +34,32 @@
 
                   <!--cart-->
                   <table class="table cart-table-list table-responsive">
-                    <tr>
-                      <td>
-                        <a href="#">
-                          <img src="assets/img/product/1.jpg" alt="" />
-                        </a>
-                      </td>
-                      <td><a href="#"> Product 1</a>
-                      </td>
-                      <td>X4</td>
-
-                      <td>
-                        <a href="#" class="close">
-                          <img src="assets/img/product/close.png" alt="" />
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <a href="#">
-                          <img src="assets/img/product/2.jpg" alt="" />
-                        </a>
-                      </td>
-                      <td><a href="#"> Product 2</a>
-                      </td>
-                      <td>X4</td>
-
-                      <td>
-                        <a href="#" class="close">
-                          <img src="assets/img/product/close.png" alt="" />
-                        </a>
-                      </td>
-                    </tr>
+                    <?php
+                    if(!empty($_SESSION["cart"]))
+                    {
+                    $total = 0;
+                    foreach($_SESSION["cart"] as $keys => $values)
+                    {
+                      ?>
+                            <tr>
+                            <td><?php echo $values["item_name"]; ?></td>
+                            <td><?php echo $values["item_quantity"] ?></td>
+                            <td>$ <?php echo $values["product_price"]; ?></td>
+                            <td>$ <?php echo number_format($values["item_quantity"] * $values["product_price"], 2); ?></td>
+                            <td><a href="shop.php?action=delete&id=<?php echo $values["product_id"]; ?>"><span class="text-danger">X</span></a></td>
+                            </tr>
+                            <?php
+                      $total = $total + ($values["item_quantity"] * $values["product_price"]);
+                    }
+                    ?>
+                        <tr>
+                        <td colspan="3" align="right">Total</td>
+                        <td align="right">$ <?php echo number_format($total, 2); ?></td>
+                        <td></td>
+                        </tr>
+                        <?php
+                    }
+                    ?>
                   </table>
 
 

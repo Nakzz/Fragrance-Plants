@@ -72,7 +72,9 @@
   position: relative;
     -webkit-transition: all .3s;
             transition: all .3s;
-    background-color: rgba(0, 0, 0, .6);}
+    background-color: rgba(0, 0, 0, .6);
+  font-family: Palatino; !important
+  font-weight: bold;}
 
 .headerAJ{
   position: absolute;

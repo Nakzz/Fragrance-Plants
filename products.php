@@ -1,5 +1,5 @@
 <?php include 'includes/header.php';
-
+session_start();
 $connect = mysqli_connect("localhost", "root", "a", "project");
 if (!$connect) {
   echo "Error: Unable to connect to MySQL." . PHP_EOL;
@@ -29,17 +29,22 @@ echo "Host information: " . mysqli_get_host_info($connect) . PHP_EOL;
       <div class="page-content ">
         <div class="container leaf_top">
           <div class="row ">
+              <div class="heading-title border-short-bottom text-center ">
+
+
+
+                </div>
             <div class="col-md-12">
 
               <div class="text-center">
                   <ul class="portfolio-filter">
                       <li class="active"><a href="#" data-filter="*"> All</a>
                       </li>
-                      <li><a href="#" data-filter=".cat1">Orchird</a>
+                      <li><a href="#" data-filter=".Test">Orchird</a>
                       </li>
-                      <li><a href="#" data-filter=".cat2">Plants</a>
+                      <li><a href="#" data-filter=".Test2">Plants</a>
                       </li>
-                      <li><a href="#" data-filter=".cat3">Indoor</a>
+                      <li><a href="#" data-filter=".Testc">Indoor</a>
                       </li>
                       <li><a href="#" data-filter=".cat4">Outdoor</a>
                       </li>
@@ -60,17 +65,17 @@ echo "Host information: " . mysqli_get_host_info($connect) . PHP_EOL;
       {
         ?>
 
-    <div class="portfolio-item cat1 cat3 ">
+    <div class="portfolio-item <?php echo $row["category"]; ?> ">
         <div class="thumb">
 
             <img src="<?php echo $row["image"]; ?>" alt="">
             <div class="portfolio-hover">
                 <div class="action-btn">
-                    <a href="<?php echo $row["image"]; ?>" class="popup-link" title="lightbox view"> <i class="icon-basic_magnifier"></i>
+                    <a href="<?php echo $row["image"]; ?>" class="popup-link" title="<?php echo $row["name"]; ?>"> <i class="icon-basic_magnifier"></i>
                     </a>
                 </div>
                 <div class="portfolio-description">
-                    <h4><a href="<?php echo $row["image"]; ?>" class="popup-link" title="lightbox view"><?php echo $row["name"]; ?></a></h4>
+                    <h4><a href="<?php echo $row["image"]; ?>" class="popup-link" title="<?php echo $row["name"]; ?>"><?php echo $row["name"]; ?></a></h4>
                     <p><a href="#">category</a>
                     </p>
                 </div>

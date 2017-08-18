@@ -1,4 +1,17 @@
-<?php include 'includes/header.php'; ?>
+<?php include 'includes/header.php';
+session_start();
+$connect = mysqli_connect("localhost", "root", "a", "project");
+if (!$connect) {
+  echo "Error: Unable to connect to MySQL." . PHP_EOL;
+  echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
+  echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
+  exit;
+}
+
+echo "Success: A proper connection to MySQL was made! The my_db database is great." . PHP_EOL;
+echo "Host information: " . mysqli_get_host_info($connect) . PHP_EOL;
+
+?>
 
 <!-- <head> its in the php-->
   <meta name="description" content="">
@@ -27,13 +40,12 @@
     <!--hero section-->
 
     <div id="fullscreen-banner" class="full-banner vertical-align banner-spa">
-      <div class="container-mid backdrop">
+      <div class="container-mid">
         <div class="container ">
-          <div class="row ">
+          <div class="row">
             <div class="col-md-8 ">
-              <div class="banner-title">
-                <h2 style="font-size:2em" class="text-uppercase white-text">Fragrance Plants & Flowers Inc.</h2>
-                <h4 class="text-uppercase white-text">random text about store </h4>
+              <div class="banner-title ">
+                <h2 style="font-size:2em" class="text-uppercase white-text backdrop">Fragrance Plants & Flowers Inc.</h2>
               </div>
             </div>
           </div>
@@ -47,7 +59,7 @@
 
       <!--intro post-->
       <div class="page-content ">
-        <div class="container leaf_top">
+        <div class="container">
           <div class="row ">
 
             <div class="heading-title border-short-bottom text-center ">

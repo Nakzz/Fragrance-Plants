@@ -10,7 +10,7 @@ New York NY 10001
             <a href="#"><i class="fa fa-facebook"></i></a>
             <a href="#"><i class="fa fa-instagram"></i></a>
             <a href="#"><i class="fa fa-google-plus"></i></a>
-            <a href="(212) 564-2103"><i class="fa fa-phone"></i></a>
+            <a href="tel:+1-212-564-2103"><i class="fa fa-phone"></i></a>
         </div>
         <!--<div class="copyright">-->
         <!--&copy; MASSIVE 2014.-->

@@ -1,6 +1,6 @@
 <?php
 session_start();
-$connect = mysqli_connect("localhost", "root", "", "tut");
+$connect = mysqli_connect("localhost", "root", "a", "project");
 if(isset($_POST["add"]))
 {
 	if(isset($_SESSION["cart"]))
@@ -16,12 +16,12 @@ if(isset($_POST["add"]))
 			'item_quantity' => $_POST["quantity"]
 			);
 			$_SESSION["cart"][$count] = $item_array;
-			echo '<script>window.location="index.php"</script>';
+			echo '<script>window.location="products.php"</script>';
 		}
 		else
 		{
 			echo '<script>alert("Products already added to cart")</script>';
-			echo '<script>window.location="index.php"</script>';
+			echo '<script>window.location="products.php"</script>';
 		}
 	}
 	else
@@ -45,7 +45,7 @@ if(isset($_GET["action"]))
 			{
 				unset($_SESSION["cart"][$keys]);
 				echo '<script>alert("Product has been removed")</script>';
-				echo '<script>window.location="index.php"</script>';
+				echo '<script>window.location="products.php"</script>';
 			}
 		}
 	}

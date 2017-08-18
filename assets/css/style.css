@@ -761,7 +761,7 @@ pre {
     width: 100%;
     padding: 0;
     letter-spacing: .5px;
-    text-transform: uppercase;
+    /*text-transform: uppercase; */
     background: none;
 }
 
@@ -771,7 +771,7 @@ pre {
     margin-right: 30px;
     color: #fff;/*#3cc47c; */
     font-size: 20px;
-    font-weight: 100;
+    font-weight: bold;
     line-height: 50px;
     font-family: Palatino;
   /*  text-shadow:
@@ -3020,7 +3020,7 @@ body {
     position: absolute;
     z-index: 200;
     top: 70%;
-    left: 50%;
+    left: 45%;
     width: 100%;
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
