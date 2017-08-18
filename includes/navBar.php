@@ -27,7 +27,7 @@
           </li>
 
           <li class="cart-info">
-            <a href="javascript:void(0)"><i class="fa fa-shopping-cart"></i> cart(2)</a>
+            <a href="javascript:void(0)"><i class="fa fa-shopping-cart"></i> cart</a>
             <div class="megamenu megamenu-quarter-width ">
               <div class="megamenu-row">
                 <div class="col12">
@@ -44,17 +44,14 @@
                             <tr>
                             <td><?php echo $values["item_name"]; ?></td>
                             <td><?php echo $values["item_quantity"] ?></td>
-                            <td>$ <?php echo $values["product_price"]; ?></td>
-                            <td>$ <?php echo number_format($values["item_quantity"] * $values["product_price"], 2); ?></td>
-                            <td><a href="shop.php?action=delete&id=<?php echo $values["product_id"]; ?>"><span class="text-danger">X</span></a></td>
+
                             </tr>
                             <?php
-                      $total = $total + ($values["item_quantity"] * $values["product_price"]);
+
                     }
                     ?>
                         <tr>
-                        <td colspan="3" align="right">Total</td>
-                        <td align="right">$ <?php echo number_format($total, 2); ?></td>
+
                         <td></td>
                         </tr>
                         <?php
@@ -64,8 +61,8 @@
 
 
                   <div class="s-cart-btn pull-right">
-                    <a href="shop-cart.html" class="btn btn-small btn-theme-color"> View cart</a>
-                    <a href="#" class="btn btn-small btn-dark-solid"> Checkout</a>
+                    <a href="cart.php" class="btn btn-small btn-theme-color"> View cart</a>
+                    <a href="checkout.php" class="btn btn-small btn-dark-solid"> Checkout</a>
                   </div>
                   <!--cart-->
 

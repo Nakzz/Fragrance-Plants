@@ -1,12 +1,10 @@
 
-0      header text not uppercase
-0      Change the font of the header and carousel image text bold Palatino
-0      make the carousel text shift left. make the back behind not all the way.
-0      remove "random text about the store".
-
       Contact.php should have colorful map
 
-0      make footer.php's phone logo take you to contact us page
+
+
+
+      
 
       make a PHP script, which will take every image from a folder and insert it into table, if not exist based on category(folder).
 
@@ -15,7 +13,7 @@
 
       compress images.
       delete unused CSS and javascript
-      
+
 
 
 Update the cost list.

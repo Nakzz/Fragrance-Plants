@@ -1,5 +1,6 @@
 <?php include 'includes/header.php';
 session_start();
+
 $connect = mysqli_connect("localhost", "root", "a", "project");
 if (!$connect) {
   echo "Error: Unable to connect to MySQL." . PHP_EOL;
@@ -87,7 +88,6 @@ echo "Host information: " . mysqli_get_host_info($connect) . PHP_EOL;
 
           <input type="text" name="quantity" class="form-control" value="1">
           <input type="hidden" name="hidden_name" value="<?php echo $row["p_name"]; ?>">
-          <input type="hidden" name="hidden_price" value="<?php echo $row["price"]; ?>">
           <input type="submit" name="add" style="margin-top:5px;" class="btn btn-default" value="Add to Bag">
 </form>
     </div>

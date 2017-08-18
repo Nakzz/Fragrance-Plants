@@ -12,7 +12,6 @@ if(isset($_POST["add"]))
 			$item_array = array(
 			'product_id' => $_GET["id"],
 			'item_name' => $_POST["hidden_name"],
-			'product_price' => $_POST["hidden_price"],
 			'item_quantity' => $_POST["quantity"]
 			);
 			$_SESSION["cart"][$count] = $item_array;
@@ -20,7 +19,7 @@ if(isset($_POST["add"]))
 		}
 		else
 		{
-			echo '<script>alert("Products already added to cart")</script>';
+			//echo '<script>alert("Products already added to cart")</script>';
 			echo '<script>window.location="products.php"</script>';
 		}
 	}
@@ -44,8 +43,7 @@ if(isset($_GET["action"]))
 			if($values["product_id"] == $_GET["id"])
 			{
 				unset($_SESSION["cart"][$keys]);
-				echo '<script>alert("Product has been removed")</script>';
-				echo '<script>window.location="products.php"</script>';
+				echo '<script>window.location="cart.php"</script>';
 			}
 		}
 	}

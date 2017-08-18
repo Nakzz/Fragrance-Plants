@@ -12,10 +12,10 @@ return array(
      */
     'mailer' => array(
         'subject'    => 'Website Contact Form', // Email subject
-        'from_email' => 'from@example.com', // Use one of your emails to avaid spam issue
-        'from_name'  => 'Jane Doe', // Use a know name eg: Mr. Web Form :)
-        'to_email'   => 'to@example.com', // Email recipient address
-        'to_name'    => '' // Optional 
+        'from_email' => 'contact@Fragranceplants.com', // Use one of your emails to avaid spam issue
+        'from_name'  => 'Mr. Web Form', // Use a know name eg: Mr. Web Form :)
+        'to_email'   => 'fragranceplants@gmail.com', // Email recipient address
+        'to_name'    => '' // Optional
         ),
 
     /**
