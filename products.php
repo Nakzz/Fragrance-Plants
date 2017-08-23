@@ -1,6 +1,6 @@
 <?php include 'includes/header.php';
 session_start();
-include_once("config.php");
+include_once("db/config.php");
 
 
 //current URL of the Page. cart_update.php redirects back to this URL
