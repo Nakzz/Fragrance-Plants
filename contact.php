@@ -42,7 +42,7 @@
 
                 <div class="heading-title-alt border-short-bottom text-center ">
                     <h3 class="text-uppercase">feel free to drop us a line</h3>
-                    <div class="half-txt">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus. Nam libero tempore</div>
+                    <div class="half-txt">Thank you for visiting with us. We look forward to providing you with beautiful plants.</div>
                 </div>
 
                 <div class="row page-content">

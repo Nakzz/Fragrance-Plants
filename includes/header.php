@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <meta name="author" content="Ajmain">
-
+<meta name="description" content="plants, orchids, ficus, dracaena, succulents, cactus, air plants, boxwood, bamboo, grasses, seasonal, flowering plants, house plants, outdoor, indoor, palms, fragrance plants and flowers, new York, NYC">
   <!--favicon icon-->
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
 
