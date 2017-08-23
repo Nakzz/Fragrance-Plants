@@ -1,16 +1,10 @@
 <?php include 'includes/header.php';
 session_start();
+include_once("config.php");
 
-$connect = mysqli_connect("localhost", "root", "a", "project");
-if (!$connect) {
-  echo "Error: Unable to connect to MySQL." . PHP_EOL;
-  echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
-  echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
-  exit;
-}
 
-echo "Success: A proper connection to MySQL was made! The my_db database is great." . PHP_EOL;
-echo "Host information: " . mysqli_get_host_info($connect) . PHP_EOL;
+//current URL of the Page. cart_update.php redirects back to this URL
+$current_url = urlencode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
 
 ?>
 
@@ -30,99 +24,114 @@ echo "Host information: " . mysqli_get_host_info($connect) . PHP_EOL;
       <div class="page-content ">
         <div class="container leaf_top">
           <div class="row ">
-              <div class="heading-title border-short-bottom text-center ">
+            <div class="heading-title border-short-bottom text-center ">
 
 
 
-                </div>
+            </div>
             <div class="col-md-12">
 
               <div class="text-center">
-                  <ul class="portfolio-filter">
-                      <li class="active"><a href="#" data-filter="*"> All</a>
-                      </li>
-                      <li><a href="#" data-filter=".Test">Orchird</a>
-                      </li>
-                      <li><a href="#" data-filter=".Test2">Plants</a>
-                      </li>
-                      <li><a href="#" data-filter=".Testc">Indoor</a>
-                      </li>
-                      <li><a href="#" data-filter=".cat4">Outdoor</a>
-                      </li>
-                      <li><a href="#" data-filter=".cat5">BNZ</a>
-                      </li>
-                  </ul>
+                <ul class="portfolio-filter">
+                  <li class="active"><a href="#" data-filter="*"> All</a>
+                  </li>
+                  <li><a href="#" data-filter=".test">Orchird</a>
+                  </li>
+                  <li><a href="#" data-filter=".test2">Plants</a>
+                  </li>
+                  <li><a href="#" data-filter=".test3">Indoor</a>
+                  </li>
+                  <li><a href="#" data-filter=".test4">Outdoor</a>
+                  </li>
+                  <li><a href="#" data-filter=".cat5">BNZ</a>
+                  </li>
+                </ul>
               </div>
 
-  <div class="portfolio col-4 gutter ">
+              <div class="portfolio col-4 gutter ">
 
 
-    <?php
-    $query = "SELECT * FROM shop ORDER BY product_id ASC";
-    $result = mysqli_query($connect, $query);
-    if(mysqli_num_rows($result) > 0)
-    {
-      while($row = mysqli_fetch_array($result))
-      {
-        ?>
 
-    <div class="portfolio-item <?php echo $row["category"]; ?> ">
-        <div class="thumb">
 
-            <img src="<?php echo $row["image"]; ?>" alt="">
-            <div class="portfolio-hover">
+
+                <!-- Products List Start -->
+                <?php
+                $results = $mysqli->query("SELECT product_code, product_name, product_desc, product_img_name, product_category FROM products ORDER BY id ASC");
+                if($results){
+                $products_item = '<ul class="products">';
+                //fetch results set as object and output HTML
+                while($obj = $results->fetch_object())
+                {
+                $products_item .= <<<EOT
+                	<li class="product">
+                	<form method="post" action="cart_update.php">
+
+                  <div class="portfolio-item {$obj->product_category}">
+                      <div class="thumb">
+
+                          <img src="{$obj->product_img_name}" alt="">
+                          <div class="portfolio-hover">
+                              <div class="action-btn">
+                                  <a href="{$obj->product_img_name}" class="popup-link" title="{$obj->product_name}"> <i class="icon-basic_magnifier"></i>
+                                  </a>
+                              </div>
+                              <div class="portfolio-description">
+                                  <h4><a href="{$obj->product_img_name}" class="popup-link" title="{$obj->product_name}">{$obj->product_name}</a></h4>
+                                  <p><a href="#">category</a>
+                                  </p>
+                              </div>
+                          </div>
+                          </div>
+                	<fieldset>
+
+
+</br> <div align="center">
+                	<label>
+                		<span>Quantity</span>
+                		<input type="text" size="1" maxlength="2" name="product_qty" value="1" />
+                    <input type="hidden" name="product_code" value="{$obj->product_code}" />
+                  	<input type="hidden" name="type" value="add" />
+                  	<input type="hidden" name="return_url" value="{$current_url}" />
+                  	<button type="submit" class="add_to_cart">Add</button>
+                	</label>
+</div>
+                	</fieldset>
+
+
+                	</form>
+                	</li>
+EOT;
+                }
+                $products_item .= '</ul>';
+                echo $products_item;
+                }
+                ?>
+                <!-- Products List End -->
+
+
+
+
+
+
+
+                <!--post style 2 start
+                <div class="portfolio portfolio-with-title portfolio-masonry col-3 gutter">
+                <div class="portfolio-item cat2 cat4">
+                <div class="thumb">
+                <img src="assets/img/Agave.jpg" alt="">
+                <div class="portfolio-hover">
                 <div class="action-btn">
-                    <a href="<?php echo $row["image"]; ?>" class="popup-link" title="<?php echo $row["name"]; ?>"> <i class="icon-basic_magnifier"></i>
-                    </a>
-                </div>
-                <div class="portfolio-description">
-                    <h4><a href="<?php echo $row["image"]; ?>" class="popup-link" title="<?php echo $row["name"]; ?>"><?php echo $row["name"]; ?></a></h4>
-                    <p><a href="#">category</a>
-                    </p>
-                </div>
+                <a href="portfolio-single.html"> <i class="icon-basic_link"></i>
+              </a>
             </div>
-
-
+          </div>
         </div>
-        <form method="post" action="shop.php?action=add&id=<?php echo $row["product_id"]; ?>">
-
-          <input type="text" name="quantity" class="form-control" value="1">
-          <input type="hidden" name="hidden_name" value="<?php echo $row["p_name"]; ?>">
-          <input type="submit" name="add" style="margin-top:5px;" class="btn btn-default" value="Add to Bag">
-</form>
-    </div>
-
-    <?php
-    }
-    }
-    ?>
-
-
-    </div>
-
-
-
-
-
-
-            <!--post style 2 start
-            <div class="portfolio portfolio-with-title portfolio-masonry col-3 gutter">
-            <div class="portfolio-item cat2 cat4">
-            <div class="thumb">
-            <img src="assets/img/Agave.jpg" alt="">
-            <div class="portfolio-hover">
-            <div class="action-btn">
-            <a href="portfolio-single.html"> <i class="icon-basic_link"></i>
-          </a>
-        </div>
+        <div class="portfolio-title">
+        <h4 class="center"><a href="portfolio-single.html">External link</a></h4>
       </div>
     </div>
-    <div class="portfolio-title">
-    <h4 class="center"><a href="portfolio-single.html">External link</a></h4>
   </div>
-</div>
-</div>
-post style 2 end-->
+  post style 2 end-->
 </div>
 </div>
 </div>

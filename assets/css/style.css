@@ -1173,14 +1173,14 @@ pre {
     }
     .logo-brand {
         display: inline-block;
-        height: 100px;
+        height: 50px;
     }
     .l-navbar-wrapper_has-sticky .logo-brand {
         display: block;
     }
     .logo-brand,
     .c-nav_s-standard > li > a {
-        line-height: 100px;
+        line-height: 50px;
     }
     .c-nav_s-bg > li > a {
         line-height: 40px;

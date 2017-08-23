@@ -1,31 +1,6 @@
 <?php include 'includes/header.php';
 session_start();
-$connect = mysqli_connect("localhost", "root", "a", "project");
-if (!$connect) {
-  echo "Error: Unable to connect to MySQL." . PHP_EOL;
-  echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
-  echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
-  exit;
-}
-
-echo "Success: A proper connection to MySQL was made! The my_db database is great." . PHP_EOL;
-echo "Host information: " . mysqli_get_host_info($connect) . PHP_EOL;
-
-?>
-
-<?php include 'includes/header.php';
-session_start();
-$connect = mysqli_connect("localhost", "root", "a", "project");
-if (!$connect) {
-  echo "Error: Unable to connect to MySQL." . PHP_EOL;
-  echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
-  echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
-  exit;
-}
-
-echo "Success: A proper connection to MySQL was made! The my_db database is great." . PHP_EOL;
-echo "Host information: " . mysqli_get_host_info($connect) . PHP_EOL;
-
+include_once("config.php");
 ?>
 
 <!-- <head> its in the php-->
@@ -42,71 +17,75 @@ echo "Host information: " . mysqli_get_host_info($connect) . PHP_EOL;
     <section class="body-content">
       <!--intro post-->
       <div class="page-content ">
-        <div class="container leaf_top">
+        <div class="container">
           <div class="row ">
-
-            <body>
-              <h2>My Shopping Bag</h2>
-              <div class="table-responsive">
-              <table class="table table-bordered">
-              <tr>
-              <th width="40%">Product Name</th>
-              <th width="10%">Quantity</th>
-
-              <th width="5%">Action</th>
-              </tr>
-              <?php
-              if(!empty($_SESSION["cart"]))
-              {
-              $total = 0;
-              foreach($_SESSION["cart"] as $keys => $values)
-              {
-                ?>
-                      <tr>
-                      <td><?php echo $values["item_name"]; ?></td>
-                      <td><?php echo $values["item_quantity"] ?></td>
-                      
-                      <td><a href="shop.php?action=delete&id=<?php echo $values["product_id"]; ?>"><span class="text-danger">X</span></a></td>
-                      </tr>
-                      <?php
-                $total = $total + ($values["item_quantity"] * $values["product_price"]);
-              }
-              ?>
-                  <tr>
-
-                  <td></td>
-                  </tr>
-                  <?php
-              }
-              ?>
-              </table>
+            <div class="heading-title border-short-bottom text-center ">
+              <h3 class="text-uppercase">View Cart</h3>
               </div>
+            <div class="cart-view-table-back">
+              <form method="post" action="cart_update.php">
+                <table width="80%"  cellpadding="6" cellspacing="0">
+                  <thead><tr><th>Quantity</th><th>Name</th><th>Remove</th></tr></thead>
+                  <tbody>
+                    <?php
+                    if(isset($_SESSION["cart_products"])) //check session var
+                    {
+                      $total = 0; //set initial total value
+                      $b = 0; //var for zebra stripe table
+                      foreach ($_SESSION["cart_products"] as $cart_itm)
+                      {
+                        //set variables to use in content below
+                        $product_name = $cart_itm["product_name"];
+                        $product_qty = $cart_itm["product_qty"];
+                        $product_code = $cart_itm["product_code"];
+                        $bg_color = ($b++%2==1) ? 'odd' : 'even'; //class for zebra stripe
+                        echo '<tr class="'.$bg_color.'">';
+                        echo '<td><input type="text" size="2" maxlength="2" name="product_qty['.$product_code.']" value="'.$product_qty.'" /></td>';
+                        echo '<td>'.$product_name.'</td>';
+                        echo '<td><input type="checkbox" name="remove_code[]" value="'.$product_code.'" /></td>';
+                        echo '</tr>';
+                      }
+                    }
+                    ?>
+
+                    <div class="s-cart-btn pull-right">
+                    <tr><br><td colspan="5"><span style="float:right;text-align: right;"><a href="cart.php"> <button class="btn btn-small btn-dark-solid" type="button"> Checkout</button></span>
+                    <br><button class="btn btn-small btn-theme-color" type="submit">Update</button></a></td></tr>
+
+                    </div>
 
 
 
-    </div>
+                  </tbody>
+                </table>
+                <input type="hidden" name="return_url" value="<?php
+                $current_url = urlencode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
+                echo $current_url; ?>" />
+              </form>
+            </div>
 
 
 
 
 
 
-            <!--post style 2 start
-            <div class="portfolio portfolio-with-title portfolio-masonry col-3 gutter">
-            <div class="portfolio-item cat2 cat4">
-            <div class="thumb">
-            <img src="assets/img/Agave.jpg" alt="">
-            <div class="portfolio-hover">
-            <div class="action-btn">
-            <a href="portfolio-single.html"> <i class="icon-basic_link"></i>
-          </a>
+
+              <!--post style 2 start
+              <div class="portfolio portfolio-with-title portfolio-masonry col-3 gutter">
+              <div class="portfolio-item cat2 cat4">
+              <div class="thumb">
+              <img src="assets/img/Agave.jpg" alt="">
+              <div class="portfolio-hover">
+              <div class="action-btn">
+              <a href="portfolio-single.html"> <i class="icon-basic_link"></i>
+            </a>
+          </div>
         </div>
       </div>
+      <div class="portfolio-title">
+      <h4 class="center"><a href="portfolio-single.html">External link</a></h4>
     </div>
-    <div class="portfolio-title">
-    <h4 class="center"><a href="portfolio-single.html">External link</a></h4>
   </div>
-</div>
 </div>
 post style 2 end-->
 </div>
