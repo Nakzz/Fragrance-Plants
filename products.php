@@ -33,9 +33,9 @@ $current_url = urlencode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_
 
               <div class="text-center">
                 <ul class="portfolio-filter">
-                  <li class="active"><a href="#" data-filter="*"> All</a>
+                  <li class="active"><a href="#" name="all" data-filter="*"> All</a>
                   </li>
-                  <li><a href="#" data-filter=".test">Orchird</a>
+                  <li><a href="products.php#orchird" name="orchird" data-filter=".test">Orchird</a>
                   </li>
                   <li><a href="#" data-filter=".test2">Plants</a>
                   </li>
