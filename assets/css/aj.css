@@ -93,3 +93,9 @@
   font-family: Palatino;
   src: url("../vendor/Palatino.ttf");
 }
+
+.palatino{
+  font-family: Palatino;
+}
+
+.style1 {background-color:#ffffff;font-weight:bold;border:2px #006699 solid;}
