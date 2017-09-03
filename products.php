@@ -39,16 +39,19 @@ $current_url = urlencode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_
 
                   <li class="active"><a href="#" name="all" data-filter="*"> All</a>
                   </li>
-                  <li><a href="#" data-filter=".test">Orchids</a>
-
+                  <li><a href="#" data-filter=".indoor">Indoor</a>
                   </li>
-                  <li><a href="#" data-filter=".test2">Plants</a>
+                  <li><a href="#" data-filter=".cactus">Cactus</a>
                   </li>
-                  <li><a href="#" data-filter=".test3">Indoor</a>
+                  <li><a href="#" data-filter=".outdoor">Outdoor</a>
                   </li>
-                  <li><a href="#" data-filter=".test4">Outdoor</a>
+                  <li><a href="#" data-filter=".seasonal">Seasonal</a>
                   </li>
-                  <li><a href="#" data-filter=".cat5">BNZ</a>
+                  <li><a href="#" data-filter=".orchids">Orchids</a>
+                  </li>
+                  <li><a href="#" data-filter=".Rental">Rental</a>
+                  </li>
+                  <li><a href="#" data-filter=".uncategorized">Uncategorized</a>
                   </li>
                 </ul>
               </div>
@@ -57,7 +60,7 @@ $current_url = urlencode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_
 
                 <!-- Products List Start -->
                 <?php
-                $results = $mysqli->query("SELECT product_code, product_name, product_desc, product_img_name, product_category FROM products ORDER BY id ASC");
+                $results = $mysqli->query("SELECT product_code, product_name, product_img_name, product_category FROM products ORDER BY id ASC");
                 if($results){
                 $products_item = '<ul class="products">';
                 //fetch results set as object and output HTML
@@ -70,15 +73,15 @@ $current_url = urlencode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_
                   <div class="portfolio-item {$obj->product_category}">
                       <div class="thumb">
 
-                          <img src="assets/img/products/{$obj->product_img_name}" alt="">
+                          <img src="assets/img/products/{$obj->product_category}/{$obj->product_img_name}" alt="">
                           <div class="portfolio-hover">
                               <div class="action-btn">
-                                  <a href="{$obj->product_img_name}" class="popup-link" title="{$obj->product_name}"> <i class="icon-basic_magnifier"></i>
+                                  <a href="assets/img/products/{$obj->product_category}/{$obj->product_img_name}" class="popup-link" title="{$obj->product_name}"> <i class="icon-basic_magnifier"></i>
                                   </a>
                               </div>
                               <div class="portfolio-description">
-                                  <h4><a href="{$obj->product_img_name}" class="popup-link" title="{$obj->product_name}">{$obj->product_name}</a></h4>
-                                  <p><a href="#">category</a>
+                                  <h4><a href="assets/img/products/{$obj->product_category}/{$obj->product_img_name}" class="popup-link" title="{$obj->product_name}">{$obj->product_name}</a></h4>
+                                  <p><a href="#">{$obj->product_category}</a>
                                   </p>
                               </div>
                           </div>

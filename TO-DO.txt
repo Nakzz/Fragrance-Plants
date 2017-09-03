@@ -1,20 +1,14 @@
-
-      Contact.php should have colorful map
-
-
-
-
-      
-
-      make a PHP script, which will take every image from a folder and insert it into table, if not exist based on category(folder).
+  make csv of all the category
+  edit sqlSetup to add to different category
 
 
 
-
-      compress images.
       delete unused CSS and javascript
 
 
 
 Update the cost list.
     8th change. cost per change. give detailed
+
+
+python productImport.py --user=root --password=a --database=project --table=products list.csv

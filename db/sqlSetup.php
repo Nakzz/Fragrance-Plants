@@ -45,11 +45,11 @@
 			  UNIQUE KEY `product_code` (`product_code`)
 			) AUTO_INCREMENT=1 ;");
 
-			$sql = mysql_query(" INSERT INTO `products` (`product_name`, `product_category`, `product_img_name`) VALUES ('$name','$category' ,'$img')");
+			$sql2 = mysql_query(" INSERT INTO `products` (`product_name`, `product_category`, `product_img_name`) VALUES ('$name','$category' ,'$img')");
 			$c = $c + 1;
 		}
 
-			if($sql){
+			if($sql or $sql2){
 				echo "You database has imported successfully. You have inserted ". $c ." recoreds";
 			}else{
 				echo "Sorry! There is some problem.";

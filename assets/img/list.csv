@@ -1,92 +1,89 @@
-Aglaonema,Aglaonema.jpg,indoor
-Arborea,Arborea.jpg,indoor
-Bonsai (1 of 1),Bonsai (1 of 1).jpg,indoor
-Boston Fern,Boston Fern.jpg,indoor
-Dracaena Margenata,Dracaena Margenata.jpg,indoor
-Dracaena Tarzan,Dracaena Tarzan.jpg,indoor
-Dracaena art,Dracaena art.jpg,indoor
-Emerald Gem,Emerald Gem.jpg,indoor
-Fabian Aralia,Fabian Aralia.jpg,indoor
-Ficus Daniella,Ficus Daniella.jpg,indoor
-Fiddle leaf fig (Ficus Lyrata),Fiddle leaf fig (Ficus Lyrata).jpg,indoor
-J.C. Coxpacta #1,J.C. Coxpacta #1.jpg,indoor
-J.C. Coxpacta #2,J.C. Coxpacta #2.jpg,indoor
-Lisa Crane Dracaena,Lisa Crane Dracaena.jpg,indoor
-Myrtle Topiaries,Myrtle Topiaries.jpg,indoor
-Peace Lily #1,Peace Lily #1.jpg,indoor
-Peace Lily #2,Peace Lily #2.jpg,indoor
-Philodendron Selloum,Philodendron Selloum.jpg,indoor
-Pontail Palm (1 of 1),Pontail Palm (1 of 1).jpg,indoor
-Pothos pole,Pothos pole.jpg,indoor
-Pothos,Pothos.jpg,indoor
-Reflexa,Reflexa.jpg,indoor
-Rubber Plant #1,Rubber Plant #1.jpg,indoor
-Rubber Plant #2,Rubber Plant #2.jpg,indoor
-Rubber Plant #3,Rubber Plant #3.jpg,indoor
-Sago Palm,Sago Palm.jpg,indoor
-Snake plant,Snake plant.jpg,indoor
-White Bird of Paradise,White Bird of Paradise.jpg,indoor
-Yucca,Yucca.jpg,indoor
-Z. Z. plant #1,Z. Z. plant #1.jpg,indoor
-Z. Z. plant #2,Z. Z. plant #2.jpg,indoor
-desktop.ini,desktop.ini,indoor
-Agave #2,Agave #2.jpg,cactus
-Agave,Agave.jpg,cactus
-Cactus,Cactus.jpg,cactus
-Column Cactus #1,Column Cactus #1.jpg,cactus
-Column Cactus #2,Column Cactus #2.jpg,cactus
-Euphorbia,Euphorbia.jpg,cactus
-Jade #1,Jade #1.jpg,cactus
-Jade #2,Jade #2.jpg,cactus
-Paddle Cactus,Paddle Cactus.jpg,cactus
-Pencil Cactus #1,Pencil Cactus #1.jpg,cactus
-Pencil Cactus #2,Pencil Cactus #2.jpg,cactus
-Succulent #1,Succulent #1.jpg,cactus
-Succulent #2,Succulent #2.jpg,cactus
-Succulent #3,Succulent #3.jpg,cactus
-Succulent mix #1,Succulent mix #1.jpg,cactus
-Succulent mix #2,Succulent mix #2.jpg,cactus
-Succulent mix #3,Succulent mix #3.jpg,cactus
-desktop.ini,desktop.ini,cactus
-Boxwood,Boxwood.jpg,outdoor
-Boxwoods,Boxwoods.jpg,outdoor
-Cone Boxwood,Cone Boxwood.jpg,outdoor
-Double Ball Boxwood,Double Ball Boxwood.jpg,outdoor
-Golden Euonymus,Golden Euonymus.jpg,outdoor
-Hydrangea,Hydrangea.jpg,outdoor
-Pompom Boxwood,Pompom Boxwood.jpg,outdoor
-Single Ball Topiary Boxwood,Single Ball Topiary Boxwood.jpg,outdoor
-Spiral Boxwood,Spiral Boxwood.jpg,outdoor
-Three Ball Topiary Boxwood,Three Ball Topiary Boxwood.jpg,outdoor
-desktop.ini,desktop.ini,outdoor
-Air Plants #1,Air Plants #1.jpg,uncategorized
-Air Plants #2,Air Plants #2.jpg,uncategorized
-Aloe,Aloe.jpg,uncategorized
-Crispy wave fern,Crispy wave fern.jpg,uncategorized
-Ivy flat,Ivy flat.jpg,uncategorized
-Ivy,Ivy.jpg,uncategorized
-Kalanchoe,Kalanchoe.jpg,uncategorized
-Kentia palm,Kentia palm.jpg,uncategorized
-Lemon Lime Dracaena,Lemon Lime Dracaena.jpg,uncategorized
-Money tree (1 of 1),Money tree (1 of 1).jpg,uncategorized
-Stephanotis,Stephanotis.jpg,uncategorized
-unknown,unknown.jpg,uncategorized
-Store (1 of 1),Store (1 of 1).jpg,seasonal
-Store (2 of 1),Store (2 of 1).jpg,seasonal
-Store (3 of 1),Store (3 of 1).jpg,seasonal
-Store (4 of 1),Store (4 of 1).jpg,seasonal
-Store (5 of 1),Store (5 of 1).jpg,seasonal
-Store (6 of 1),Store (6 of 1).jpg,seasonal
-Store (7 of 1),Store (7 of 1).jpg,seasonal
-Store (8 of 1),Store (8 of 1).jpg,seasonal
-Orchid #3,Orchid #3.jpg,orchids
-Orchid #4,Orchid #4.jpg,orchids
-Orchid #5,Orchid #5.jpg,orchids
-Orchids #1,Orchids #1.jpg,orchids
-Orchids #2,Orchids #2.jpg,orchids
-Set of 5 Orchids,Set of 5 Orchids.jpg,orchids
-Set of three orchids,Set of three orchids.jpg,orchids
-Set of two orchids,Set of two orchids.jpg,orchids
-Single Orchid,Single Orchid.jpg,orchids
-desktop.ini,desktop.ini,orchids
-Areca Palm,Areca Palm.jpg,Rental
+product_code,product_name,product_img_name,product_category
+AB1000,Aglaonema.jpg,Aglaonema.jpg,indoor
+AB1001,Arborea.jpg,Arborea.jpg,indoor
+AB1002,Bonsai (1 of 1).jpg,Bonsai_(1_of_1).jpg,indoor
+AB1003,Boston Fern.jpg,Boston_Fern.jpg,indoor
+AB1004,Dracaena Margenata.jpg,Dracaena_Margenata.jpg,indoor
+AB1005,Dracaena Tarzan.jpg,Dracaena_Tarzan.jpg,indoor
+AB1006,Dracaena art.jpg,Dracaena_art.jpg,indoor
+AB1007,Emerald Gem.jpg,Emerald_Gem.jpg,indoor
+AB1008,Fabian Aralia.jpg,Fabian_Aralia.jpg,indoor
+AB1009,Ficus Daniella.jpg,Ficus_Daniella.jpg,indoor
+AB1010,Fiddle leaf fig (Ficus Lyrata).jpg,Fiddle_leaf_fig_(Ficus_Lyrata).jpg,indoor
+AB1011,J.C. Coxpacta #1.jpg,J.C._Coxpacta_#1.jpg,indoor
+AB1012,J.C. Coxpacta #2.jpg,J.C._Coxpacta_#2.jpg,indoor
+AB1013,Lisa Crane Dracaena.jpg,Lisa_Crane_Dracaena.jpg,indoor
+AB1014,Myrtle Topiaries.jpg,Myrtle_Topiaries.jpg,indoor
+AB1015,Peace Lily #1.jpg,Peace_Lily_#1.jpg,indoor
+AB1016,Peace Lily #2.jpg,Peace_Lily_#2.jpg,indoor
+AB1017,Philodendron Selloum.jpg,Philodendron_Selloum.jpg,indoor
+AB1018,Pontail Palm (1 of 1).jpg,Pontail_Palm_(1_of_1).jpg,indoor
+AB1019,Pothos.jpg,Pothos.jpg,indoor
+AB1020,Pothos pole.jpg,Pothos_pole.jpg,indoor
+AB1021,Reflexa.jpg,Reflexa.jpg,indoor
+AB1022,Rubber Plant #1.jpg,Rubber_Plant_#1.jpg,indoor
+AB1023,Rubber Plant #2.jpg,Rubber_Plant_#2.jpg,indoor
+AB1024,Rubber Plant #3.jpg,Rubber_Plant_#3.jpg,indoor
+AB1025,Sago Palm.jpg,Sago_Palm.jpg,indoor
+AB1026,Snake plant.jpg,Snake_plant.jpg,indoor
+AB1027,White Bird of Paradise.jpg,White_Bird_of_Paradise.jpg,indoor
+AB1028,Yucca.jpg,Yucca.jpg,indoor
+AB1029,Z. Z. plant #1.jpg,Z._Z._plant_#1.jpg,indoor
+AB1030,Z. Z. plant #2.jpg,Z._Z._plant_#2.jpg,indoor
+AB1031,Agave.jpg,Agave.jpg,cactus
+AB1032,Agave #2.jpg,Agave_#2.jpg,cactus
+AB1033,Cactus.jpg,Cactus.jpg,cactus
+AB1034,Column Cactus #1.jpg,Column_Cactus_#1.jpg,cactus
+AB1035,Column Cactus #2.jpg,Column_Cactus_#2.jpg,cactus
+AB1036,Euphorbia.jpg,Euphorbia.jpg,cactus
+AB1037,Jade #1.jpg,Jade_#1.jpg,cactus
+AB1038,Jade #2.jpg,Jade_#2.jpg,cactus
+AB1039,Paddle Cactus.jpg,Paddle_Cactus.jpg,cactus
+AB1040,Pencil Cactus #1.jpg,Pencil_Cactus_#1.jpg,cactus
+AB1041,Pencil Cactus #2.jpg,Pencil_Cactus_#2.jpg,cactus
+AB1042,Succulent #1.jpg,Succulent_#1.jpg,cactus
+AB1043,Succulent #2.jpg,Succulent_#2.jpg,cactus
+AB1044,Succulent #3.jpg,Succulent_#3.jpg,cactus
+AB1045,Succulent mix #1.jpg,Succulent_mix_#1.jpg,cactus
+AB1046,Succulent mix #2.jpg,Succulent_mix_#2.jpg,cactus
+AB1047,Succulent mix #3.jpg,Succulent_mix_#3.jpg,cactus
+AB1048,Boxwood.jpg,Boxwood.jpg,outdoor
+AB1049,Boxwoods.jpg,Boxwoods.jpg,outdoor
+AB1050,Cone Boxwood.jpg,Cone_Boxwood.jpg,outdoor
+AB1051,Double Ball Boxwood.jpg,Double_Ball_Boxwood.jpg,outdoor
+AB1052,Golden Euonymus.jpg,Golden_Euonymus.jpg,outdoor
+AB1053,Hydrangea.jpg,Hydrangea.jpg,outdoor
+AB1054,Pompom Boxwood.jpg,Pompom_Boxwood.jpg,outdoor
+AB1055,Single Ball Topiary Boxwood.jpg,Single_Ball_Topiary_Boxwood.jpg,outdoor
+AB1056,Spiral Boxwood.jpg,Spiral_Boxwood.jpg,outdoor
+AB1057,Three Ball Topiary Boxwood.jpg,Three_Ball_Topiary_Boxwood.jpg,outdoor
+AB1058,Air Plants #1.jpg,Air_Plants_#1.jpg,uncategorized
+AB1059,Air Plants #2.jpg,Air_Plants_#2.jpg,uncategorized
+AB1060,Aloe.jpg,Aloe.jpg,uncategorized
+AB1061,Crispy wave fern.jpg,Crispy_wave_fern.jpg,uncategorized
+AB1062,Ivy.jpg,Ivy.jpg,uncategorized
+AB1063,Ivy flat.jpg,Ivy_flat.jpg,uncategorized
+AB1064,Kalanchoe.jpg,Kalanchoe.jpg,uncategorized
+AB1065,Kentia palm.jpg,Kentia_palm.jpg,uncategorized
+AB1066,Lemon Lime Dracaena.jpg,Lemon_Lime_Dracaena.jpg,uncategorized
+AB1067,Money tree (1 of 1).jpg,Money_tree_(1_of_1).jpg,uncategorized
+AB1068,Stephanotis.jpg,Stephanotis.jpg,uncategorized
+AB1069,unknown.jpg,unknown.jpg,uncategorized
+AB1070,Store (1 of 1).jpg,Store_(1_of_1).jpg,seasonal
+AB1071,Store (2 of 1).jpg,Store_(2_of_1).jpg,seasonal
+AB1072,Store (3 of 1).jpg,Store_(3_of_1).jpg,seasonal
+AB1073,Store (4 of 1).jpg,Store_(4_of_1).jpg,seasonal
+AB1074,Store (5 of 1).jpg,Store_(5_of_1).jpg,seasonal
+AB1075,Store (6 of 1).jpg,Store_(6_of_1).jpg,seasonal
+AB1076,Store (7 of 1).jpg,Store_(7_of_1).jpg,seasonal
+AB1077,Store (8 of 1).jpg,Store_(8_of_1).jpg,seasonal
+AB1078,Orchid #3.jpg,Orchid_#3.jpg,orchids
+AB1079,Orchid #4.jpg,Orchid_#4.jpg,orchids
+AB1080,Orchid #5.jpg,Orchid_#5.jpg,orchids
+AB1081,Orchids #1.jpg,Orchids_#1.jpg,orchids
+AB1082,Orchids #2.jpg,Orchids_#2.jpg,orchids
+AB1083,Set of 5 Orchids.jpg,Set_of_5_Orchids.jpg,orchids
+AB1084,Set of three orchids.jpg,Set_of_three_orchids.jpg,orchids
+AB1085,Set of two orchids.jpg,Set_of_two_orchids.jpg,orchids
+AB1086,Single Orchid.jpg,Single_Orchid.jpg,orchids
+AB1087,Areca Palm.jpg,Areca_Palm.jpg,Rental
