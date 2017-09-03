@@ -44,7 +44,7 @@
 			  PRIMARY KEY (`id`),
 			  UNIQUE KEY `product_code` (`product_code`)
 			) AUTO_INCREMENT=1 ;");
-			
+
 			$sql = mysql_query(" INSERT INTO `products` (`product_name`, `product_category`, `product_img_name`) VALUES ('$name','$category' ,'$img')");
 			$c = $c + 1;
 		}
