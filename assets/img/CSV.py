@@ -15,7 +15,7 @@ for path, dirs, files in os.walk(cwd +"/products"):
         #print([folder])
         name= filename.split('.jpg')[0]
 
-        name = filename.replace('_',' ')
+        name = name.replace('_',' ')
 
         product_code= "AB" + str(c)
 
