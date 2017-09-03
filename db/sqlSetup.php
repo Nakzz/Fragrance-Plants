@@ -16,8 +16,6 @@
 
 <body>
 
-    <div style="border:1px dashed #333333; width:300px; margin:0 auto; padding:10px;">
-
 	<form name="import" method="post" enctype="multipart/form-data">
     	<input type="file" name="file" /><br />
         <input type="submit" name="submit" value="Submit" />
@@ -33,9 +31,21 @@
 		while(($filesop = fgetcsv($handle, 1000, ",")) !== false)
 		{
 			$name = $filesop[0];
-			$email = $filesop[1];
+			$img = $filesop[1];
+			$category = $filesop[2];
 
-			$sql = mysql_query("INSERT INTO csv (name, email) VALUES ('$name','$email')");
+			$sql = mysql_query("CREATE TABLE IF NOT EXISTS `products` (
+			  `id` int(11) NOT NULL AUTO_INCREMENT,
+			  `product_code` int(11) NOT NULL AUTO_INCREMENT,
+			  `product_name` varchar(60) NOT NULL UNIQUE,
+			  `product_category` tinytext NOT NULL,
+			  `product_img_name` varchar(60) NOT NULL UNIQUE,
+			  'date_entry' DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+			  PRIMARY KEY (`id`),
+			  UNIQUE KEY `product_code` (`product_code`)
+			) AUTO_INCREMENT=1 ;");
+			
+			$sql = mysql_query(" INSERT INTO `products` (`product_name`, `product_category`, `product_img_name`) VALUES ('$name','$category' ,'$img')");
 			$c = $c + 1;
 		}
 
@@ -49,9 +59,6 @@
 ?>
 
     </div>
-    <hr style="margin-top:300px;" />
-
-    <div align="center" style="font-size:18px;"><a href="http://www.eggslab.net">&copy; Eggs Lab</a></div>
 
 </body>
 </html>
