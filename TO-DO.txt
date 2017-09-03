@@ -2,6 +2,8 @@
   edit sqlSetup to add to different category
 
 
+  Search function
+  Checkout sends list to client
 
       delete unused CSS and javascript
 
@@ -12,3 +14,6 @@ Update the cost list.
 
 
 python productImport.py --user=root --password=a --database=project --table=products list.csv
+
+
+python productImport.py --user=teamadmn_admin --password=Id2009170023 --database=teamadmn_fragrance --table=products list.csv
