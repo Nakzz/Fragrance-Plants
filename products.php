@@ -6,6 +6,9 @@ include_once("db/config.php");
 //current URL of the Page. cart_update.php redirects back to this URL
 $current_url = urlencode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
 
+
+
+
 ?>
 
 <!-- <head> its in the php-->
@@ -32,10 +35,10 @@ $current_url = urlencode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_
             <div class="col-md-12">
 
               <div class="text-center">
-                <ul class="portfolio-filter">
+                <ul  class="portfolio-filter">
+
                   <li class="active"><a href="#" name="all" data-filter="*"> All</a>
                   </li>
-
                   <li><a href="#" data-filter=".test">Orchids</a>
 
                   </li>
@@ -49,7 +52,6 @@ $current_url = urlencode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_
                   </li>
                 </ul>
               </div>
-
               <div class="portfolio col-4 gutter ">
 
 
@@ -68,7 +70,7 @@ $current_url = urlencode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_
                   <div class="portfolio-item {$obj->product_category}">
                       <div class="thumb">
 
-                          <img src="{$obj->product_img_name}" alt="">
+                          <img src="assets/img/products/{$obj->product_img_name}" alt="">
                           <div class="portfolio-hover">
                               <div class="action-btn">
                                   <a href="{$obj->product_img_name}" class="popup-link" title="{$obj->product_name}"> <i class="icon-basic_magnifier"></i>

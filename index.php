@@ -69,13 +69,13 @@ include_once("db/config.php");
                     <img src="assets/img/Agave.jpg" alt="">
                     <div class="portfolio-hover">
                       <div class="action-btn">
-                        <a href="portfolio-single.html"> <i class="icon-basic_link"></i>
+                        <a href="products.php"> <i class="icon-basic_link"></i>
                         </a>
                       </div>
                     </div>
                   </div>
                   <div class="portfolio-title">
-                    <h4 class="center"><a href="portfolio-single.html">External link</a></h4>
+                    <h4 class="center"><a href="products.php">External link</a></h4>
 
                   </div>
                 </div>
@@ -87,13 +87,13 @@ include_once("db/config.php");
                     <img src="assets/img/Agave.jpg" alt="">
                     <div class="portfolio-hover">
                       <div class="action-btn">
-                        <a href="portfolio-single.html"> <i class="icon-basic_link"></i>
+                        <a href="products.php"> <i class="icon-basic_link"></i>
                         </a>
                       </div>
                     </div>
                   </div>
                   <div class="portfolio-title">
-                    <h4 class="center"><a href="portfolio-single.html">External link</a></h4>
+                    <h4 class="center"><a href="products.php">External link</a></h4>
                   </div>
                 </div>
 
@@ -102,13 +102,13 @@ include_once("db/config.php");
                     <img src="assets/img/Agave.jpg" alt="">
                     <div class="portfolio-hover">
                       <div class="action-btn">
-                        <a href="portfolio-single.html"> <i class="icon-basic_link"></i>
+                        <a href="products.php"> <i class="icon-basic_link"></i>
                         </a>
                       </div>
                     </div>
                   </div>
                   <div class="portfolio-title">
-                    <h4 class="center"><a href="portfolio-single.html">External link</a></h4>
+                    <h4 class="center"><a href="products.php">External link</a></h4>
                   </div>
                 </div>
                 <div class="portfolio-item cat2 cat4">
@@ -116,13 +116,13 @@ include_once("db/config.php");
                     <img src="assets/img/Agave.jpg" alt="">
                     <div class="portfolio-hover">
                       <div class="action-btn">
-                        <a href="portfolio-single.html"> <i class="icon-basic_link"></i>
+                        <a href="products.php"> <i class="icon-basic_link"></i>
                         </a>
                       </div>
                     </div>
                   </div>
                   <div class="portfolio-title">
-                    <h4 class="center"><a href="portfolio-single.html">External link</a></h4>
+                    <h4 class="center"><a href="products.php">External link</a></h4>
                   </div>
                 </div>
                 <div class="portfolio-item cat2 cat4">
@@ -130,13 +130,13 @@ include_once("db/config.php");
                     <img src="assets/img/Agave.jpg" alt="">
                     <div class="portfolio-hover">
                       <div class="action-btn">
-                        <a href="portfolio-single.html"> <i class="icon-basic_link"></i>
+                        <a href="products.php"> <i class="icon-basic_link"></i>
                         </a>
                       </div>
                     </div>
                   </div>
                   <div class="portfolio-title">
-                    <h4 class="center"><a href="portfolio-single.html">External link</a></h4>
+                    <h4 class="center"><a href="products.php">External link</a></h4>
                   </div>
                 </div>
                 <div class="portfolio-item cat2 cat4">
@@ -144,13 +144,13 @@ include_once("db/config.php");
                     <img src="assets/img/Agave.jpg" alt="">
                     <div class="portfolio-hover">
                       <div class="action-btn">
-                        <a href="portfolio-single.html"> <i class="icon-basic_link"></i>
+                        <a href="products.php"> <i class="icon-basic_link"></i>
                         </a>
                       </div>
                     </div>
                   </div>
                   <div class="portfolio-title">
-                    <h4 class="center"><a href="portfolio-single.html">External link</a></h4>
+                    <h4 class="center"><a href="products.php">External link</a></h4>
                   </div>
                 </div>
 
