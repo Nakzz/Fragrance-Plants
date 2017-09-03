@@ -35,7 +35,7 @@ include_once("db/config.php");
           <div class="row">
             <div class="col-md-8 ">
               <div class="banner-title ">
-                <h2 style="font-size:2em" class="text-uppercase white-text backdrop">Fragrance Plants & Flowers Inc.</h2>
+                <h2 style="font-size:2em" class=" white-text backdrop">Fragrance Plants & Flowers Inc.</h2>
               </div>
             </div>
           </div>
@@ -54,10 +54,9 @@ include_once("db/config.php");
 
             <div class="heading-title border-short-bottom text-center ">
 
-              <h3 class="text-uppercase">Category</h3>
+              <h3 class="palatino">Welcome</h3>
 
-              <p class="half-txt p-top-20">Nam liro tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
-                placeat facere possimus.</p>
+
               </div>
 
               <!--post style 2 start-->

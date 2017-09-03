@@ -93,3 +93,15 @@
   font-family: Palatino;
   src: url("../vendor/Palatino.ttf");
 }
+
+.palatino{
+  font-family: Palatino;
+}
+
+
+.wrapper iframe {
+  
+    top: 0;
+    left: 0;
+    width: 100%;
+}

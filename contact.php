@@ -138,8 +138,8 @@ include_once("db/config.php");?>
         </div>
 
         <!-- Google Map start-->
-        <div href="https://goo.gl/maps/hpxY3rzupdr" id='grey-map' class="height-450"></div>
-        <!--  Google Map End-->
+ <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.6950653701506!2d-73.9942373830013!3d40.74673488104389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259af81377907%3A0x3a81a644554e31aa!2sFragrance+Plants+%26+Flowers+Inc!5e0!3m2!1sen!2sus!4v1504397172885"  height="600" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+                <!--  Google Map End-->
     </section>
     <!--body content end-->
 
@@ -184,7 +184,7 @@ include_once("db/config.php");?>
     <script src="assets/vendor/easy-pie-chart/jquery.easypiechart.min.js"></script>
     <script src="assets/vendor/elasic-slider/jquery.eislideshow.js"></script>
     <script src="assets/vendor/flex-slider/jquery.flexslider-min.js"></script>
-    <script src="assets/vendor/gmap/jquery.gmap.min.js"></script>
+
     <script src="assets/vendor/images-loaded/imagesloaded.js"></script>
     <script src="assets/vendor/isotope/jquery.isotope.js"></script>
     <script src="assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
@@ -206,21 +206,15 @@ include_once("db/config.php");?>
     <!-- endinject -->
 
     <script>
-        $(document).ready(function(){
-           $("#grey-map").gMap({
-               markers: [
-                   {
-                       latitude: 40.746734,
-                       longitude: -73.992144,
-                       html: '<div class="test_marker"> <a href="https://goo.gl/maps/hpxY3rzupdr">Fragrance Plants & Flowers Inc.</a></div>'
 
-                   }
-               ],
-               zoom: 16,
-               scrollwheel:false,
-               styles: [{"featureType":"landscape","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","stylers":[{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]},{"featureType":"road.highway","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"road.arterial","stylers":[{"saturation":-100},{"lightness":30},{"visibility":"on"}]},{"featureType":"road.local","stylers":[{"saturation":-100},{"lightness":40},{"visibility":"on"}]},{"featureType":"transit","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"administrative.province","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":-25},{"saturation":-100}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]}]
-           })
-        });
+    function myMap() {
+      var mapOptions = {
+          center: new google.maps.LatLng(51.5, -0.12),
+          zoom: 10,
+          mapTypeId: google.maps.MapTypeId.HYBRID
+      }
+  var map = new google.maps.Map(document.getElementById("mapper"), mapOptions);
+  }
     </script>
   </body>
 
