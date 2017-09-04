@@ -80,14 +80,6 @@
               </div>
             </div>
           </li>
-          <li>
-            <a href="products.php"><i class="fa fa-search"></i> Search</a>
-            <!-- <div class="megamenu megamenu-quarter-width navbar-search">
-              <form role="searchform">
-                <input type="text" class="form-control" placeholder="Search Here">
-              </form>
-            </div> -->
-          </li>
         </ul>
         <!--mega menu end-->
       </nav>
