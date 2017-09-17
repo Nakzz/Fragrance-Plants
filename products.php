@@ -41,7 +41,7 @@ $current_url = urlencode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_
                   </li>
                   <li><a href="#" data-filter=".indoor">Indoor</a>
                   </li>
-                  <li><a href="#" data-filter=".cactus">Cactus</a>
+                  <li><a href="#" data-filter=".cactus">Cactus and Succulent</a>
                   </li>
                   <li><a href="#" data-filter=".outdoor">Outdoor</a>
                   </li>
@@ -50,8 +50,6 @@ $current_url = urlencode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_
                   <li><a href="#" data-filter=".orchids">Orchids</a>
                   </li>
                   <li><a href="#" data-filter=".Rental">Rental</a>
-                  </li>
-                  <li><a href="#" data-filter=".uncategorized">Uncategorized</a>
                   </li>
                 </ul>
               </div>
