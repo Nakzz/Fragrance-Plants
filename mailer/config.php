@@ -14,7 +14,7 @@ return array(
         'subject'    => 'Website Contact Form', // Email subject
         'from_email' => 'contact@Fragranceplants.com', // Use one of your emails to avaid spam issue
         'from_name'  => 'Mr. Web Form', // Use a know name eg: Mr. Web Form :)
-        'to_email'   => 'fragranceplants@gmail.com', // Email recipient address
+        'to_email'   => 'naqibprio@gmail.com', // Email recipient address
         'to_name'    => '' // Optional
         ),
 
@@ -23,10 +23,13 @@ return array(
      */
     'fields_map' => array(
         'DEFAULT' => array(
+            'type'    =>  'Type'
             'name'     => 'Name',
             'email'    => 'Email',
             'subject'  => 'Subject',
             'comments' => 'Message',
+            'phone'    => 'Phone No',
+            'product_name'     => 'List of Cart items',
             ),
 
         'FORM_ALT' => array(

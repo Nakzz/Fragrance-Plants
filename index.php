@@ -141,7 +141,7 @@ include_once("db/config.php");
                 </div>
                 <div class="portfolio-item cat2 cat4">
                   <div class="thumb">
-                    <img src="assets/img/products/seasonal/Seasonal_5.jpg" alt="">
+                    <img src="assets/img/products/seasonal/Seasonal_1.jpg" alt="">
                     <div class="portfolio-hover">
                       <div class="action-btn">
                         <a href="products.php"> <i class="icon-basic_link"></i>
