@@ -48,8 +48,9 @@ include_once("db/config.php");
                     }
                     ?>
 
+
                     <div class="s-cart-btn pull-right">
-                    <tr><br><td colspan="5"><span style="float:right;text-align: right;"><a href="cart.php"> <button class="btn btn-small btn-dark-solid" type="button"> Checkout</button></span>
+                    <tr><br><td colspan="5"><span style="float:right;text-align: right;"><a href="cart.php"> </span>
                     <br><button class="btn btn-small btn-theme-color" type="submit">Update</button></a></td></tr>
 
                     </div>
@@ -64,30 +65,56 @@ include_once("db/config.php");
               </form>
             </div>
 
+            <!-- form start-->
+            <div style="padding-top:1%" class="">
+              <form class="contact-comments m-top-50 js-Mailer" method="post">
+                  <div class="row">
+
+                      <div class="col-md-6 form-group">
+                          <!-- Name -->
+                          <input type="text" name="name" class="form-control" placeholder="Name *" maxlength="100" required data-error="You must enter name">
+                          <div class="help-block with-errors"></div>
+                      </div>
+
+                      <div class="form-group col-md-6">
+                          <!-- Phone -->
+                          <input type="text" name="phone" class="form-control" placeholder="Phone *" maxlength="100" required data-error="Invalid phone number!">
+                      </div>
+
+                      <div class="col-md-12 form-group">
+                          <!-- Email -->
+                          <input type="email" name="email" class="form-control" placeholder="Email *" maxlength="100" required data-error="Invalid email address!">
+                          <div class="help-block with-errors"></div>
+                      </div>
 
 
 
 
+                      <div class="form-group col-md-12">
+                          <textarea name="address" class="form-control" rows="2" placeholder="Address" maxlength="100"></textarea>
+                      </div>
+
+                      <!-- Comment -->
+                      <div class="form-group col-md-12">
+                          <textarea name="comments" class="cmnt-text form-control" rows="6" placeholder="Comments" maxlength="400"></textarea>
+                      </div>
+
+                      <!-- Send Button -->
+                      <div class="form-group col-md-12">
+                          <button type="submit" class="btn btn-small btn-dark-solid ">Checkout</button>
+                      </div>
+
+                  </div>
+                  <input type="hidden" name="id" value="FORM_ALT">
+              </form>
+            </div>
 
 
-              <!--post style 2 start
-              <div class="portfolio portfolio-with-title portfolio-masonry col-3 gutter">
-              <div class="portfolio-item cat2 cat4">
-              <div class="thumb">
-              <img src="assets/img/Agave.jpg" alt="">
-              <div class="portfolio-hover">
-              <div class="action-btn">
-              <a href="portfolio-single.html"> <i class="icon-basic_link"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="portfolio-title">
-      <h4 class="center"><a href="portfolio-single.html">External link</a></h4>
-    </div>
-  </div>
-</div>
-post style 2 end-->
+            <!-- form end-->
+
+
+
+
 </div>
 </div>
 </div>

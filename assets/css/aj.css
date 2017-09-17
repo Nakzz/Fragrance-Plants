@@ -70,6 +70,9 @@
   padding-top: 1%;
 }
 
+.emptyspace{
+  padding-top: 5%;
+}
 
 
 .backdrop{
@@ -103,3 +106,12 @@
     left: 0;
     width: 100%;
 }
+
+/*
+form start
+*/
+
+
+/*
+form end
+*/
