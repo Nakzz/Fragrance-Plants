@@ -1,5 +1,4 @@
 <?php
-include 'includes/header.php';
 session_start();
 include_once("db/config.php");
 
