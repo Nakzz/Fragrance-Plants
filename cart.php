@@ -116,9 +116,9 @@ include_once("db/config.php");
                           $product_qty = $cart_itm["product_qty"];
                           $product_code = $cart_itm["product_code"];
 
-                          <input type="hidden" name="product_name" value=".$product_name.">
+                         echo '<input type="hidden" name="product_name" value="'.$product_name.'">;'
 
-                  
+
                         }
                       }
                       ?>
