@@ -67,64 +67,45 @@ include_once("db/config.php");
 
             <!-- form start-->
             <div style="padding-top:1%" class="">
-              <form class="contact-comments m-top-50 js-Mailer" method="post">
-                  <div class="row">
+              <form id="checkout" class="" action="checkout_process.php" method="post">
+                <fieldset>
+                  <input placeholder="Your name *" type="text" name="name" value="<?= $name ?>" required autofocus>
+                </fieldset>
+                <fieldset>
+                  <input placeholder="Your Email *" type="text" name="email" value="<?= $email ?>" required >
+                </fieldset>
+                <fieldset>
+                  <input placeholder="Your Phone Number *" type="text" name="phone" value="<?= $phone ?>" required >
+                </fieldset>
+                <fieldset>
+                  <input placeholder="Your Address" type="text" name="address" value="<?= $address ?>">
+                </fieldset>
+                <fieldset>
+                  <input placeholder="Comments" type="text" name="message" value="">
+                </fieldset>
+                <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+    </fieldset>lllll
 
-                      <div class="col-md-6 form-group">
-                          <!-- Name -->
-                          <input type="text" name="name" class="form-control" placeholder="Name *" maxlength="100" required data-error="You must enter name">
-                          <div class="help-block with-errors"></div>
-                      </div>
+    <?php
+    if(isset($_SESSION["cart_products"])) //check session var
+    {
+      $total = 0; //set initial total value
+      $b = 0; //var for zebra stripe table
+      foreach ($_SESSION["cart_products"] as $cart_itm)
+      {
+        //set variables to use in content below
+        $product_name = $cart_itm["product_name"];
+        $product_qty = $cart_itm["product_qty"];
+        $product_code = $cart_itm["product_code"];
 
-                      <div class="form-group col-md-6">
-                          <!-- Phone -->
-                          <input type="text" name="phone" class="form-control" placeholder="Phone *" maxlength="100" required data-error="Invalid phone number!">
-                      </div>
-
-                      <div class="col-md-12 form-group">
-                          <!-- Email -->
-                          <input type="email" name="email" class="form-control" placeholder="Email *" maxlength="100" required data-error="Invalid email address!">
-                          <div class="help-block with-errors"></div>
-                      </div>
-
-
-
-
-                      <div class="form-group col-md-12">
-                          <textarea name="address" class="form-control" rows="2" placeholder="Address" maxlength="100"></textarea>
-                      </div>
-
-                      <!-- Comment -->
-                      <div class="form-group col-md-12">
-                          <textarea name="comments" class="cmnt-text form-control" rows="6" placeholder="Comments" maxlength="400"></textarea>
-                      </div>
-
-                      <!-- Send Button -->
-                      <div class="form-group col-md-12">
-                          <button type="submit" class="btn btn-small btn-dark-solid ">Checkout</button>
-                      </div>
-
-                      <?php
-                      if(isset($_SESSION["cart_products"])) //check session var
-                      {
-                        $total = 0; //set initial total value
-                        $b = 0; //var for zebra stripe table
-                        foreach ($_SESSION["cart_products"] as $cart_itm)
-                        {
-                          //set variables to use in content below
-                          $product_name = $cart_itm["product_name"];
-                          $product_qty = $cart_itm["product_qty"];
-                          $product_code = $cart_itm["product_code"];
-
-                         echo '<input type="hidden" name="product_name" value="'.$product_name.'">;'
+        echo '<input id="product_name'.$b.'" name="product_name'.$b.'" type="hidden" value="'.$product_name. ' x' .$product_qty. '">';
+        $b++;
+      }
+    }
+    ?>
 
 
-                        }
-                      }
-                      ?>
-
-                  </div>
-                  <input type="hidden" name="id" value="FORM_ALT">
               </form>
             </div>
 

@@ -5,9 +5,9 @@ Online Store Website for Fragrance Plants and Flowers.
 *Create db/config.php
     <?php
 
-    $db_username = 'root';  //teamadmn_admin
-    $db_password = 'a';     //Id2009170023
-    $db_name = 'project';   //teamadmn_fragrance
+    $db_username = 'root'; 
+    $db_password = 'a';     
+    $db_name = 'project';   
     $db_host = 'localhost';
 
 
