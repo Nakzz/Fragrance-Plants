@@ -72,7 +72,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     'X-Mailer: PHP/' . phpversion();
       if (mail($to, $subject, $message_body, $headers)){
           $success = "Order sent, you will be contacted soon!";
-          $name = $email = $phone = $message =$address = $url = '';
+          $name = $email = $phone = $message =$address = $url = ' ';
       }
   }
 
