@@ -61,9 +61,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if ($name_error == '' and $email_error == '' and $phone_error == '' and $url_error == '' ){
       $message_body = '';
       unset($_POST['submit']);
-
-          $message_body .=  print_r($_POST) ;
-
+      foreach ($_POST as $key => $value){
+          $message_body .=  "$key: $value \n";
+      }
 
       $to = 'naqibprio10@gmail.com';
       $subject = 'Order From Fragrance Flower';
@@ -72,7 +72,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     'X-Mailer: PHP/' . phpversion();
       if (mail($to, $subject, $message_body, $headers)){
           $success = "Order sent, you will be contacted soon!";
-          //$name = $email = $phone = $message = $address = $url = ' ';
+          $name = $email = $phone = $message =$address = $url = '';
       }
   }
 
