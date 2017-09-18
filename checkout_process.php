@@ -70,7 +70,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       $headers = 'From: contact@fragranceplants.com' . "\r\n" .
     'Reply-To: DONOTREPLY@fragranceplants.com' . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
-      if (mail($to, $subject, $message, $headers)){
+      if (mail($to, $subject, $message_body, $headers)){
           $success = "Order sent, you will be contacted soon!";
           //$name = $email = $phone = $message = $address = $url = ' ';
       }
