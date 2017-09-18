@@ -85,7 +85,7 @@ include_once("db/config.php");
                 </fieldset>
                 <fieldset>
       <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-    </fieldset>lllll
+    </fieldset>
 
     <?php
     if(isset($_SESSION["cart_products"])) //check session var
