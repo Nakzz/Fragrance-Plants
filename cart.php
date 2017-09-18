@@ -92,7 +92,7 @@ $current_url = urlencode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_
 
                     <div class="col-md-6 form-group">
                       <div class="form-group">
-                        <textarea placeholder="Comments" maxlength="400" class=" form-control" type="text" name="message" value=""></textarea>
+                        <textarea placeholder="Additional Instructions" maxlength="400" class=" form-control" type="text" name="message" value=""></textarea>
                       </div>
                       <div class="form-group full-width">
                         <button name="submit" class="btn btn-small btn-dark-solid " type="submit" id="contact-submit" data-submit="...Sending">Checkout</button>
