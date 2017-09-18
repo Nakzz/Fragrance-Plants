@@ -1,5 +1,5 @@
 <?php
-print_r($_POST);
+
 // define variables and set to empty values
 $name_error = $email_error = $phone_error = $url_error = "";
 $name = $email = $phone = $message = $address = $url = $success = "";
@@ -72,7 +72,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     'X-Mailer: PHP/' . phpversion();
       if (mail($to, $subject, $message, $headers)){
           $success = "Order sent, you will be contacted soon!";
-          $name = $email = $phone = $message = $address = $url = ' ';
+          //$name = $email = $phone = $message = $address = $url = ' ';
       }
   }
 
