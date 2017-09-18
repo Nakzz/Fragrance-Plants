@@ -1,8 +1,8 @@
 <?php
 
 // define variables and set to empty values
-$name_error = $email_error = $phone_error = $url_error = "";
-$name = $email = $phone = $message = $address = $url = $success = "";
+$name_error = $email_error = $phone_error = $url_error = " ";
+$name = $email = $phone = $message = $address = $url = $success = " ";
 
 //form is submitted with POST method
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -65,9 +65,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           $message_body .=  "$key: $value \n";
       }
 
-      $to = 'naqibprio10@gmail.com';
-      $subject = 'Order From Fragrance Flower';
-      $headers = 'From: contact@fragranceplants.com' . "\r\n" .
+      $to = 'naqibprio10@gmail.com ';
+      $subject = 'Order From Fragrance Flower Website';
+      $headers = 'From: store@fragranceplants.com' . "\r\n" .
     'Reply-To: DONOTREPLY@fragranceplants.com' . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
       if (mail($to, $subject, $message_body, $headers)){
