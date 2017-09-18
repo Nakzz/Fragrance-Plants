@@ -1,7 +1,7 @@
 <?php
-print_r($_POST);
+
 // define variables and set to empty values
-$name_error = $email_error = $phone_error = $url_error = " ";
+$name_error = $email_error = $phone_error = $url_error = "";
 $name = $email = $phone = $message = $address = $url = $success = "";
 
 //form is submitted with POST method
@@ -66,13 +66,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       }
 
       $to = 'naqibprio10@gmail.com';
-      $subject = 'Order From Fragrance Flower Website';
-      $headers = 'From: store@fragranceplants.com' . "\r\n" .
+      $subject = 'Order From Fragrance Flower';
+      $headers = 'From: contact@fragranceplants.com' . "\r\n" .
     'Reply-To: DONOTREPLY@fragranceplants.com' . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
       if (mail($to, $subject, $message_body, $headers)){
           $success = "Order sent, you will be contacted soon!";
-          $name = $email = $phone = $message =$address = $url = ' ';
+          $name = $email = $phone = $message =$address = $url = '';
       }
   }
 
