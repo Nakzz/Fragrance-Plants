@@ -68,41 +68,24 @@ include_once("db/config.php");
             <!-- form start-->
             <div style="padding-top:1%" class="">
               <form id="checkout" class="" action="checkout_process.php" method="post">
-
-                <div class="row">
-                    <div class="col-md-6 ">
-                        <div class="form-group">
-                            <!-- Name -->
-                            <input type="text" name="name" class=" form-control" placeholder="Name *" maxlength="100" value="<?= $name ?>" required>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <!-- Email -->
-                            <input type="text" name="email" class=" form-control" placeholder="Email *" maxlength="100" value="<?= $email ?>" required >
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <!-- phone -->
-                            <input type="text" name="phone" class=" form-control" placeholder="Phone *" maxlength="100" value="<?= $phone ?>" required>
-                        </div>
-                        <div class="form-group">
-                            <!-- address -->
-                            <input type="text" name="address" class=" form-control" placeholder="Address" maxlength="100" value="<?= $address ?>">
-                        </div>
-                        <div class="form-group">
-                            <!-- Subject -->
-                            <input type="text" name="message" class=" form-control" placeholder="Instructions" maxlength="100">
-                        </div>
-
-                    </div>
-
-                    <div class="col-md-6 form-group">
-
-                        <div class="form-group full-width">
-                            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Checkout</button>
-                        </div>
-                    </div>
-                </div>
+                <fieldset>
+                  <input placeholder="Your name *" type="text" name="name" value="<?= $name ?>" required autofocus>
+                </fieldset>
+                <fieldset>
+                  <input placeholder="Your Email *" type="text" name="email" value="<?= $email ?>" required >
+                </fieldset>
+                <fieldset>
+                  <input placeholder="Your Phone Number *" type="text" name="phone" value="<?= $phone ?>" required >
+                </fieldset>
+                <fieldset>
+                  <input placeholder="Your Address" type="text" name="address" value="<?= $address ?>">
+                </fieldset>
+                <fieldset>
+                  <input placeholder="Comments" type="text" name="message" value="">
+                </fieldset>
+                <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Checkout</button>
+    </fieldset>
 
     <?php
     if(isset($_SESSION["cart_products"])) //check session var
@@ -120,6 +103,8 @@ include_once("db/config.php");
       }
     }
     ?>
+
+
               </form>
             </div>
 
