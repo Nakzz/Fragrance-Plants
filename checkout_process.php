@@ -4,6 +4,7 @@
 $name_error = $email_error = $phone_error = $url_error = "";
 $name = $email = $phone = $message = $address = $url = $success = "";
 
+	unset($new_product['return_url']);
 //form is submitted with POST method
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if (empty($_POST["name"])) {
@@ -84,3 +85,7 @@ function test_input($data) {
   $data = htmlspecialchars($data);
   return $data;
 }
+$return_url = (isset($_POST["return_url"]))?urldecode($_POST["return_url"]):''; //return url
+header('Location:'.$return_url);
+
+?>

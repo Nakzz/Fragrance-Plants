@@ -1,6 +1,8 @@
 <?php include 'includes/header.php';
 session_start();
 include_once("db/config.php");
+$current_url = urlencode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
+
 ?>
 
 <!-- <head> its in the php-->
@@ -85,6 +87,9 @@ include_once("db/config.php");
                 </fieldset>
                 <fieldset>
       <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Checkout</button>
+      <input type="hidden" name="return_url" value="<?php
+      $current_url = urlencode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
+      echo $current_url; ?>" />
     </fieldset>
 
     <?php
