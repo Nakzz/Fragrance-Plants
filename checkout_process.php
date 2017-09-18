@@ -61,13 +61,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if ($name_error == '' and $email_error == '' and $phone_error == '' and $url_error == '' ){
       $message_body = '';
       unset($_POST['submit']);
-      foreach ($_POST as $key => $value){
-          $message_body .=  "$key: $value\n";
-      }
+
+          $message_body .=  $_POST;
+      
 
       $to = 'naqibprio10@gmail.com';
       $subject = 'Order From Fragrance Flower';
-      $headers = 'From: order@fragranceplants.com' . "\r\n" .
+      $headers = 'From: contact@fragranceplants.com' . "\r\n" .
     'Reply-To: DONOTREPLY@fragranceplants.com' . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
       if (mail($to, $subject, $message, $headers)){
