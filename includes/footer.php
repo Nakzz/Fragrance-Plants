@@ -7,8 +7,8 @@ New York NY 10001
         </a>
 
         <div class="social-link circle m-top-30 m-bot-20">
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.facebook.com/pg/plantsfloweresny/about/"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/fragrance.plants.and.flowers/"><i class="fa fa-instagram"></i></a>
             <a href="#"><i class="fa fa-google-plus"></i></a>
             <a href="tel:+1-212-564-2103"><i class="fa fa-phone"></i></a>
         </div>
