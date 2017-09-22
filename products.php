@@ -34,6 +34,8 @@ $current_url = urlencode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_
             </div>
             <div class="col-md-12">
 
+<h4 class="center lt-grey ">We do installations of outdoor plants.</h4>
+
               <div class="text-center">
                 <ul style="list-style:none" class="portfolio-filter">
 

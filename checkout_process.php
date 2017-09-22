@@ -66,14 +66,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           $message_body .=  "$key: $value \n";
       }
 
-      $to = 'fragranceplants@gmail.com';
+      // $to = 'fragranceplants@gmail.com';
+			$to = 'naqibprio10@gmail.com';
       $subject = 'Order From Fragrance Flower';
       $headers = 'From: contact@fragranceplants.com' . "\r\n" .
     'Reply-To: DONOTREPLY@fragranceplants.com' . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
       if (mail($to, $subject, $message_body, $headers)){
+<<<<<<< HEAD
           $success = "Order sent, you will be contacted soon!";
           $name = $email = $phone = $message =$address = $url = ' ';
+=======
+          $output = successMessage();
+          $name = $email = $phone = $message =$address = $url = '';
+>>>>>>> c80a5d7028cb63d9b7dbad57f8d8cdce44e57e97
       }
   }
 
@@ -85,6 +91,11 @@ function test_input($data) {
   $data = htmlspecialchars($data);
   return $data;
 }
+function successMessage(){
+	$success = "Order sent, you will be contacted soon!";
+	return "<div class='success'> $success </div>";
+}
+
 $return_url = (isset($_POST["return_url"]))?urldecode($_POST["return_url"]):''; //return url
 header('Location:'.$return_url);
 

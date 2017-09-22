@@ -71,21 +71,30 @@ $current_url = urlencode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_
               <div style="padding-top:5%" class="">
 
                 <form id="checkout" class="" action="checkout_process.php" method="post">
+<<<<<<< HEAD
                   <div class="alert alert-success">
   <strong>Success!</strong> Please contact Fragrance plants and flowers for payment.
 </div>
+=======
+
+
+>>>>>>> c80a5d7028cb63d9b7dbad57f8d8cdce44e57e97
                   <div class="row">
                     <div class="col-md-6 ">
+                      <?php print $output ?>
                       <div class="form-group">
                         <input placeholder="Your name *" class=" form-control" type="text" name="name" value="<?= $name ?>" required autofocus>
+                        <span class="error"><?= $name_error ?></span>
                       <div class="help-block with-errors"></div>
                       </div>
                       <div class="form-group">
                         <input placeholder="Your Email *" class=" form-control" type="text" name="email" value="<?= $email ?>" required >
+                        <span class="error"><?= $email_error ?></span>
                       <div class="help-block with-errors"></div>
                       </div>
                       <div class="form-group">
                         <input placeholder="Your Phone Number *" class=" form-control" type="text" name="phone" value="<?= $phone ?>" required >
+                        <span class="error"><?= $phone_error ?></span>
                       </div>
                       <div class="form-group">
                         <input placeholder="Your Address" class=" form-control" type="text" name="address" value="<?= $address ?>">
