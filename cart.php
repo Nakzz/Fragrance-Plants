@@ -71,25 +71,19 @@ $current_url = urlencode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_
               <div style="padding-top:5%" class="">
 
                 <form id="checkout" class="" action="checkout_process.php" method="post">
-                  <div class="alert alert-success">
-  <strong>Success!</strong> Please contact Fragrance plants and flowers for payment.
-</div>
+
                   <div class="row">
                     <div class="col-md-6 ">
-                      <?php print $output ?>
                       <div class="form-group">
                         <input placeholder="Your name *" class=" form-control" type="text" name="name" value="<?= $name ?>" required autofocus>
-                        <span class="error"><?= $name_error ?></span>
                       <div class="help-block with-errors"></div>
                       </div>
                       <div class="form-group">
                         <input placeholder="Your Email *" class=" form-control" type="text" name="email" value="<?= $email ?>" required >
-                        <span class="error"><?= $email_error ?></span>
                       <div class="help-block with-errors"></div>
                       </div>
                       <div class="form-group">
                         <input placeholder="Your Phone Number *" class=" form-control" type="text" name="phone" value="<?= $phone ?>" required >
-                        <span class="error"><?= $phone_error ?></span>
                       </div>
                       <div class="form-group">
                         <input placeholder="Your Address" class=" form-control" type="text" name="address" value="<?= $address ?>">
@@ -209,27 +203,6 @@ $current_url = urlencode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_
     });
   });
   </script>
-<script type="text/javascript">
-$("#checkout").submit(function() {
-
-  var url = "checkout_process.php"; // the script where you handle the form input.
-
-  $.ajax({
-         type: "POST",
-         url: url,
-         // serialize your form's elements.
-         data: $("#checkout").serialize(),
-         success: function(data)
-         {
-             // "something" is the class of your form wrapper
-             $('.alert-success').html(data);
-         }
-       });
-  // avoid to execute the actual submit of the form.
-  return false;
-});
-</script>
-
 </body>
 
 </html>

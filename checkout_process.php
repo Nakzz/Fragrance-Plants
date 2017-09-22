@@ -2,7 +2,7 @@
 
 // define variables and set to empty values
 $name_error = $email_error = $phone_error = $url_error = "";
-$name = $email = $phone = $message = $address = $url = $success = "";
+$name = $email = $phone = $message = $address = $url = "";
 
 	unset($new_product['return_url']);
 //form is submitted with POST method
@@ -88,10 +88,7 @@ function test_input($data) {
   $data = htmlspecialchars($data);
   return $data;
 }
-function successMessage(){
-	$success = "Order sent, you will be contacted soon!";
-	return "<div class='success'> $success </div>";
-}
+
 
 $return_url = (isset($_POST["return_url"]))?urldecode($_POST["return_url"]):''; //return url
 header('Location:'.$return_url);
