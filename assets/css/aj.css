@@ -1,8 +1,8 @@
-.lt-grey { color: $lt-grey;}
+.lt-grey { color: #555 !important;}
 
-.vlt-grey { color: $vlt-grey;}
+.vlt-grey { color: $vlt-grey !important;}
 
-.mid-grey { color: $mid-grey;}
+.mid-grey { color: $mid-grey !important;}
 
 .blue { color: $blue;}
 
@@ -18,7 +18,7 @@
 
 .grey-bg { background: $grey;}
 
-.lt-grey-bg { background: $lt-grey;}
+.lt-grey-bg { background: $lt-grey !important;}
 
 .vlt-grey-bg { background: $vlt-grey;}
 
@@ -82,6 +82,10 @@
     background-color: rgba(0, 0, 0, .6);
   font-family: Palatino; !important
   font-weight: bold;}
+
+  .nobackdrop{
+    font-family: Palatino; !important
+    font-weight: bold;}
 
 .headerAJ{
   position: absolute;
