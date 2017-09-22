@@ -66,8 +66,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           $message_body .=  "$key: $value \n";
       }
 
-      // $to = 'fragranceplants@gmail.com';
-			$to = 'naqibprio10@gmail.com';
+       $to = 'fragranceplants@gmail.com';
+			//$to = 'naqibprio10@gmail.com';
       $subject = 'Order From Fragrance Flower';
       $headers = 'From: contact@fragranceplants.com' . "\r\n" .
     'Reply-To: DONOTREPLY@fragranceplants.com' . "\r\n" .
