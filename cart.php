@@ -71,7 +71,9 @@ $current_url = urlencode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_
               <div style="padding-top:5%" class="">
 
                 <form id="checkout" class="" action="checkout_process.php" method="post">
-
+                  <div class="alert alert-success">
+  <strong>Success!</strong> Please contact Fragrance plants and flowers for payment.
+</div>
                   <div class="row">
                     <div class="col-md-6 ">
                       <div class="form-group">
@@ -203,6 +205,27 @@ $current_url = urlencode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_
     });
   });
   </script>
+<script type="text/javascript">
+$("#checkout").submit(function() {
+
+  var url = "checkout_process.php"; // the script where you handle the form input.
+
+  $.ajax({
+         type: "POST",
+         url: url,
+         // serialize your form's elements.
+         data: $("#checkout").serialize(),
+         success: function(data)
+         {
+             // "something" is the class of your form wrapper
+             $('.alert-success').html(data);
+         }
+       });
+  // avoid to execute the actual submit of the form.
+  return false;
+});
+</script>
+
 </body>
 
 </html>
