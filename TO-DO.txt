@@ -1,5 +1,8 @@
-      UNSET VARIABLES AFTER CHECKOUT.
-      show sucess msg after email sent
+
+
+      make Online log of each order
+
+
 
       delete unused CSS and javascript
 

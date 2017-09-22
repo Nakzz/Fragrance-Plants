@@ -73,13 +73,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     'Reply-To: DONOTREPLY@fragranceplants.com' . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
       if (mail($to, $subject, $message_body, $headers)){
-<<<<<<< HEAD
+
           $success = "Order sent, you will be contacted soon!";
           $name = $email = $phone = $message =$address = $url = ' ';
-=======
-          $output = successMessage();
-          $name = $email = $phone = $message =$address = $url = '';
->>>>>>> c80a5d7028cb63d9b7dbad57f8d8cdce44e57e97
+
       }
   }
 

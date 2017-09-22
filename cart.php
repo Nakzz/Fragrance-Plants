@@ -71,14 +71,9 @@ $current_url = urlencode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_
               <div style="padding-top:5%" class="">
 
                 <form id="checkout" class="" action="checkout_process.php" method="post">
-<<<<<<< HEAD
                   <div class="alert alert-success">
   <strong>Success!</strong> Please contact Fragrance plants and flowers for payment.
 </div>
-=======
-
-
->>>>>>> c80a5d7028cb63d9b7dbad57f8d8cdce44e57e97
                   <div class="row">
                     <div class="col-md-6 ">
                       <?php print $output ?>
