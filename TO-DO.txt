@@ -1,9 +1,5 @@
-  make csv of all the category
-  edit sqlSetup to add to different category
-
-
-  Search function
-  Checkout sends list to client
+      UNSET VARIABLES AFTER CHECKOUT.
+      show sucess msg after email sent
 
       delete unused CSS and javascript
 
