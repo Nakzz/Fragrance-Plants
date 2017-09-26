@@ -76,7 +76,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
           $success = "Order sent, you will be contacted soon!";
           $name = $email = $phone = $message =$address = $url = ' ';
-
+					header('Location: http://fragranceplants.com/order.php');
+					exit();
       }
   }
 
