@@ -1,2 +1,7 @@
 [17-Sep-2017 14:58:09 America/Chicago] PHP Warning:  include_once(db/config.php): failed to open stream: No such file or directory in /home3/teamadmn/Fragrance-Plants/index.php on line 3
 [17-Sep-2017 14:58:09 America/Chicago] PHP Warning:  include_once(): Failed opening 'db/config.php' for inclusion (include_path='.:/opt/php56/lib/php') in /home3/teamadmn/Fragrance-Plants/index.php on line 3
+[17-Sep-2017 16:23:08 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/teamadmn/Fragrance-Plants/includes/header.php:38) in /home3/teamadmn/Fragrance-Plants/cart_update.php on line 60
+[17-Sep-2017 16:23:57 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/teamadmn/Fragrance-Plants/includes/header.php:38) in /home3/teamadmn/Fragrance-Plants/cart_update.php on line 60
+[17-Sep-2017 16:35:43 America/Chicago] PHP Parse error:  syntax error, unexpected '<' in /home3/teamadmn/Fragrance-Plants/cart.php on line 119
+[17-Sep-2017 16:37:35 America/Chicago] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home3/teamadmn/Fragrance-Plants/cart.php on line 122
+[17-Sep-2017 16:37:36 America/Chicago] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home3/teamadmn/Fragrance-Plants/cart.php on line 122
