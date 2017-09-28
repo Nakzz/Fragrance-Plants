@@ -34,7 +34,7 @@ $current_url = urlencode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_
             </div>
             <div class="col-md-12">
 
-<h4 class="center lt-grey ">We do installations of outdoor plants.</h4>
+
 
               <div class="text-center">
                 <ul style="list-style:none" class="portfolio-filter">
@@ -45,7 +45,7 @@ $current_url = urlencode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_
                   </li>
                   <li><a href="#" data-filter=".cactus">Cactus and Succulent</a>
                   </li>
-                  <li><a href="#" data-filter=".outdoor">Outdoor</a>
+                  <li id="wrapperN"><h5 class="center lt-grey textN">We do installations <br> of outdoor plants.</h5><a href="#" data-filter=".outdoor">Outdoor</a>
                   </li>
                   <li><a href="#" data-filter=".seasonal">Seasonal</a>
                   </li>
@@ -54,6 +54,8 @@ $current_url = urlencode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_
                   <li><a href="#" data-filter=".Rental">Rental</a>
                   </li>
                 </ul>
+
+
               </div>
               <div class="portfolio col-4 gutter ">
 

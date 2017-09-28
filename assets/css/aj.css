@@ -119,3 +119,14 @@ form start
 /*
 form end
 */
+
+#wrapperN .textN {
+position:relative;
+bottom:30px;
+left:0px;
+visibility:hidden;
+}
+
+#wrapperN:hover .textN {
+visibility:visible;
+}

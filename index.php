@@ -52,7 +52,7 @@ include_once("db/config.php");
         <div class="container">
           <div class="row ">
             <div class="banner-title ">
-              <h2 style="font-size:4em" class="center white-text nobackdrop">Fragrance Plants & Flowers Inc.</h2><br>
+              <h2 style="font-size:4em" class="center black-text nobackdrop">Fragrance Plants & Flowers Inc.</h2><br>
             </div>
             <div class="heading-title border-short-bottom text-center ">
 
