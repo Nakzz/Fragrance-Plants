@@ -25,10 +25,12 @@ $current_url = urlencode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_
     <section class="body-content">
       <!--intro post-->
       <div class="page-content ">
-        <div class="container leaf_top">
+        <div class="container">
           <div class="row ">
             <div class="heading-title border-short-bottom text-center ">
 
+
+                <h3 class="text-uppercase">Products</h3>
 
 
             </div>
