@@ -25,10 +25,12 @@ $current_url = urlencode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_
     <section class="body-content">
       <!--intro post-->
       <div class="page-content ">
-        <div class="container leaf_top">
+        <div class="container">
           <div class="row ">
             <div class="heading-title border-short-bottom text-center ">
 
+
+                <h3 class="text-uppercase">Products</h3>
 
 
             </div>
@@ -62,7 +64,7 @@ $current_url = urlencode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_
 
                 <!-- Products List Start -->
                 <?php
-                $results = $mysqli->query("SELECT product_code, product_name, product_img_name, product_category FROM products ORDER BY id ASC");
+                $results = $mysqli->query("SELECT product_code, product_name, product_img_name, product_category FROM products ORDER BY product_name ASC");
                 if($results){
                 $products_item = '<ul style="list-style:none" class="products">';
                 //fetch results set as object and output HTML
