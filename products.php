@@ -39,7 +39,7 @@ $current_url = urlencode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_
 
 
               <div class="text-center">
-                <ul style="list-style:none" class="portfolio-filter">
+                <ul style="list-style:none"  id="results" class="portfolio-filter" >
 
                   <li class="active"><a href="#" name="all" data-filter="*"> All</a>
                   </li>
@@ -49,9 +49,9 @@ $current_url = urlencode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_
                   </li>
                   <li id="wrapperN"><h5 class="center lt-grey textN">We do installations <br> of outdoor plants.</h5><a href="#" data-filter=".outdoor">Outdoor</a>
                   </li>
-                  <li><a href="#" data-filter=".seasonal">Seasonal</a>
+                  <li><a href="#" id="foo" data-filter=".seasonal">Seasonal</a>
                   </li>
-                  <li><a href="#" data-filter=".orchids">Orchids</a>
+                  <li><a href="#" id="f1" data-filter=".orchids">Orchids</a>
                   </li>
                   <li><a href="#" data-filter=".Rental">Rental</a>
                   </li>
@@ -154,6 +154,7 @@ EOT;
 <!-- inject:js -->
 <script src="assets/vendor/modernizr/modernizr.js"></script>
 <script src="assets/vendor/jquery/jquery-1.10.2.min.js"></script>
+
 <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
 <script src="assets/vendor/bootstrap-validator/validator.min.js"></script>
 <script src="assets/vendor/breakpoint/breakpoint.js"></script>
@@ -179,7 +180,7 @@ EOT;
 <script src="assets/vendor/visible/visible.js"></script>
 <script src="assets/vendor/wow/wow.min.js"></script>
 <script src="assets/js/scripts.js"></script>
-
+<script src="assets/js/aj.js"></script>
 
 
 <!-- endinject -->
@@ -210,6 +211,7 @@ $(document).ready(function(){
     },
   });
 });
+
 </script>
 </body>
 

@@ -75,7 +75,7 @@
          Sticky nav
          ===============================================*/
         function initSticky() {
-        
+
         }
         initSticky();
 
@@ -190,13 +190,16 @@
 
         /*==============================================
          Portfolio filter nav
-         ===============================================*/
+===============================================*/
         $(".portfolio-filter").on("click", "a", function (event) {
             event.preventDefault();
             var $this = $(this);
+            console.log("this:"+ this);
+
             $this.parent().addClass("active").siblings().removeClass("active");
             $this.parents(".text-center").next().isotope({filter: $this.data("filter")});
         });
+
 
 
         /*==============================================

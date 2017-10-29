@@ -71,13 +71,13 @@ include_once("db/config.php");
                     <img src="assets/img/products/indoor/Boston_Fern.jpg" alt="">
                     <div class="portfolio-hover">
                       <div class="action-btn">
-                        <a href="products.php"> <i class="icon-basic_link"></i>
+                        <a href="products.php#indoor"> <i class="icon-basic_link"></i>
                         </a>
                       </div>
                     </div>
                   </div>
                   <div class="portfolio-title">
-                    <h4 class="center"><a href="products.php">Indoor</a></h4>
+                    <h4 class="center"><a href="products.php#indoor">Indoor</a></h4>
 
                   </div>
                 </div>
@@ -89,13 +89,13 @@ include_once("db/config.php");
                     <img src="assets/img/products/outdoor/Hydrangea.jpg" alt="">
                     <div class="portfolio-hover">
                       <div class="action-btn">
-                        <a href="products.php"> <i class="icon-basic_link"></i>
+                        <a href="products.php#outdoor"> <i class="icon-basic_link"></i>
                         </a>
                       </div>
                     </div>
                   </div>
                   <div class="portfolio-title">
-                    <h4 class="center"><a href="products.php">Outdoor</a></h4>
+                    <h4 class="center"><a href="products.php#outdoor">Outdoor</a></h4>
                   </div>
                 </div>
 
@@ -104,13 +104,13 @@ include_once("db/config.php");
                     <img src="assets/img/products/cactus/Succulent_mix_3.jpg" alt="">
                     <div class="portfolio-hover">
                       <div class="action-btn">
-                        <a href="products.php"> <i class="icon-basic_link"></i>
+                        <a href="products.php#cactus"> <i class="icon-basic_link"></i>
                         </a>
                       </div>
                     </div>
                   </div>
                   <div class="portfolio-title">
-                    <h4 class="center"><a href="products.php">Cactus</a></h4>
+                    <h4 class="center"><a href="products.php#cactus">Cactus</a></h4>
                   </div>
                 </div>
                 <div class="portfolio-item cat2 cat4">
@@ -118,13 +118,13 @@ include_once("db/config.php");
                     <img src="assets/img/products/orchids/Orchid_5.jpg" alt="">
                     <div class="portfolio-hover">
                       <div class="action-btn">
-                        <a href="products.php"> <i class="icon-basic_link"></i>
+                        <a href="products.php#orchids"> <i class="icon-basic_link"></i>
                         </a>
                       </div>
                     </div>
                   </div>
                   <div class="portfolio-title">
-                    <h4 class="center"><a href="products.php">Orchids</a></h4>
+                    <h4 class="center"><a href="products.php#orchids">Orchids</a></h4>
                   </div>
                 </div>
                 <div class="portfolio-item cat2 cat4">
@@ -132,13 +132,13 @@ include_once("db/config.php");
                     <img src="assets/img/products/Rental/Areca_Palm.jpg" alt="">
                     <div class="portfolio-hover">
                       <div class="action-btn">
-                        <a href="products.php"> <i class="icon-basic_link"></i>
+                        <a href="products.php#rental"> <i class="icon-basic_link"></i>
                         </a>
                       </div>
                     </div>
                   </div>
                   <div class="portfolio-title">
-                    <h4 class="center"><a href="products.php">Rental</a></h4>
+                    <h4 class="center"><a href="products.php#rental">Rental</a></h4>
                   </div>
                 </div>
                 <div class="portfolio-item cat2 cat4">
@@ -146,13 +146,13 @@ include_once("db/config.php");
                     <img src="assets/img/products/seasonal/Seasonal_1.jpg" alt="">
                     <div class="portfolio-hover">
                       <div class="action-btn">
-                        <a href="products.php"> <i class="icon-basic_link"></i>
+                        <a href="products.php#seasonal"> <i class="icon-basic_link"></i>
                         </a>
                       </div>
                     </div>
                   </div>
                   <div class="portfolio-title">
-                    <h4 class="center"><a href="products.php">Seasonal</a></h4>
+                    <h4 class="center"><a href="products.php#seasonal">Seasonal</a></h4>
                   </div>
                 </div>
 

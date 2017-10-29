@@ -1,15 +1,14 @@
 
 
       make Online log of each order
-
+      add order number corresponding to each order number which will be sent in the email and the new page.
 
 
       delete unused CSS and javascript
 
 
 
-Update the cost list.
-    8th change. cost per change. give detailed
+
 
 
 python productImport.py --user=root --password=a --database=project --table=products list.csv
